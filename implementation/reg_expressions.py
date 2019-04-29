@@ -104,6 +104,10 @@ def extract_rtv(html):
 
     print("Output object:\n%s" % json.dumps(dataItem, indent = 4, ensure_ascii=False))
 
+
+def extract_podnapisi(html):
+    print("TODO")
+
 print("RTVSLO 1: Audi A6 50 TDI quattro_ nemir v premijskem razredu")
 html = open('../input/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html','r', encoding='utf-8').read()
 extract_rtv(html)
@@ -119,4 +123,12 @@ print("--------------------------------------------------------------")
 print("JEWELRY 2")
 html = open('../input/overstock.com/jewelry02.html','r').read()
 extract_overstock(html)
+print("--------------------------------------------------------------")
+print("PODNAPISI 1")
+html = open('../input/podnapisi.net/Searching for subtitles.html','r').read()
+extract_podnapisi(html)
+print("--------------------------------------------------------------")
+print("PODNAPISI 2")
+html = open('../input/podnapisi.net/Searching for subtitles2.html','r').read()
+extract_podnapisi(html)
 print("--------------------------------------------------------------")
