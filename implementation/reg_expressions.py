@@ -26,7 +26,7 @@ def extract_overstock(html):
     matches = re.finditer(regex, html)
     i = 0
     for match in matches:
-        extracted[i]["Content"] = match.group(1) + " " + match.group(2)
+        extracted[i]["Content"] = match.group(1).replace('\t', ' ').replace('\n', ' ').replace('\r', ' ') + " " + match.group(2).replace('\t', ' ').replace('\n', ' ').replace('\r', ' ')
         i += 1
 
 
@@ -92,7 +92,7 @@ def extract_rtv(html):
             content += match.group(2)
 
     # Remove extra html tags (<br>, <strong>, etc)
-    clean_content = BeautifulSoup(content, "lxml").text
+    clean_content = BeautifulSoup(content, "lxml").text.replace('\t', ' ').replace('\n', ' ').replace('\r', ' ')
     dataItem = {
         "Autor": author,
         "PublishedTime": published_time,
@@ -105,8 +105,51 @@ def extract_rtv(html):
     print("Output object:\n%s" % json.dumps(dataItem, indent = 4, ensure_ascii=False))
 
 
-def extract_podnapisi(html):
-    print("TODO")
+def extract_partis(html):
+    extracted = []
+    # NASLOV
+    regex = r"<div class=\"listeklink\">[\s\S]*?<a href=\".*\">(.*)</a>"
+    matches = re.finditer(regex, html)
+    for match in matches:
+        dataItem = {
+            "Naslov": "",
+            "Podnaslov": "",
+            "Velikost": "",
+            "Sejalcev": "",
+            "Pijavk": "",
+            "Prenosov": ""
+        }
+        title = match.group(1)
+        dataItem["Naslov"] = title
+        extracted.append(dataItem)
+
+    # PODNASLOV
+    regex = r"<div class=\"liopisl\">(.*?)(<img src=\".*\">)?</div>"
+    matches = re.finditer(regex, html)
+    i = 0
+    for match in matches:
+        extracted[i]["Podnaslov"] = match.group(1)
+        i += 1
+
+    # VELIKOST, SEJALCEV, PIJAVK IN PRENOSOV
+    regex = r"<div class=\"datat\">(.*)</div>"
+    matches = re.finditer(regex, html)
+    i = 0
+    j = 0
+    for match in matches:
+        if i%4 == 0:
+            extracted[j]["Velikost"] = match.group(1)
+        if i%4 == 1:
+            extracted[j]["Sejalcev"] = match.group(1)
+        if i%4 == 2:
+            extracted[j]["Pijavk"] = match.group(1)
+        if i%4 == 3:
+            extracted[j]["Prenosov"] = match.group(1)
+            j += 1
+        i += 1
+
+    print("Output object:\n%s" % json.dumps(extracted, indent=4, ensure_ascii=False))
+
 
 print("RTVSLO 1: Audi A6 50 TDI quattro_ nemir v premijskem razredu")
 html = open('../input/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html','r', encoding='utf-8').read()
@@ -124,11 +167,11 @@ print("JEWELRY 2")
 html = open('../input/overstock.com/jewelry02.html','r').read()
 extract_overstock(html)
 print("--------------------------------------------------------------")
-print("PODNAPISI 1")
-html = open('../input/podnapisi.net/Searching for subtitles.html','r').read()
-extract_podnapisi(html)
+print("PARTIS 1")
+html = open('../input/partis.si/Partis.si.html','r', encoding='utf-8').read()
+extract_partis(html)
 print("--------------------------------------------------------------")
-print("PODNAPISI 2")
-html = open('../input/podnapisi.net/Searching for subtitles2.html','r').read()
-extract_podnapisi(html)
+print("PARTIS 2")
+html = open('../input/partis.si/Partis2.si.html','r', encoding='utf-8').read()
+extract_partis(html)
 print("--------------------------------------------------------------")
