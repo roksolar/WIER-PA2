@@ -9,7 +9,7 @@ class MyHTMLParser1(HTMLParser):
         #print("Encountered a start tag: <"+ tag+ ">")
 
     def handle_endtag(self, tag):
-        wrapper.append("<" + tag + ">")
+        wrapper.append("<" + tag + "/>")
         #print("Encountered an end tag : </"+ tag+ ">")
 
     def handle_data(self, data):
@@ -23,14 +23,30 @@ class MyHTMLParser2(HTMLParser):
         #print("Encountered a start tag: <"+ tag+ ">")
 
     def handle_endtag(self, tag):
-        list_of_tokens.append("<" + tag + ">")
+        list_of_tokens.append("<" + tag + "/>")
         #print("Encountered an end tag : </"+ tag+ ">")
 
     def handle_data(self, data):
         list_of_tokens.append(data)
         #print("Encountered some data  :"+ data)
 
+
+class MatchingMethods:
+    def string_mismatches(self, w_string, s_string):
+        if w_string == s_string:
+            return "#PCDATA"
+        else:
+            return w_string
+    def find_square(self, w_list, s_list):
+        ul_w = [i for i, x in enumerate(w_list) if x == "<ul>"]
+        ul_s = [i for i, x in enumerate(s_list) if x == "</ul>"]
+        ul_end_w = [i for i, x in enumerate(w_list) if x == "<ul>"]
+        ul_end_s = [i for i, x in enumerate(s_list) if x == "</ul>"]
+
+
+
 parser = etree.HTMLParser()
+
 
 # --------------------------------------
 # Read first page
@@ -64,4 +80,5 @@ print(list_of_tokens)
 #-------------------------------------------
 
 # TODO: generate wrapper
+
 
