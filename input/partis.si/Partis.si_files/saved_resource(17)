@@ -1,0 +1,44 @@
+(function() {
+
+    try {
+        if(typeof top._ipromNS != 'undefined') _ipromNS = top._ipromNS;
+    } catch (e) {
+        // in Iframe
+    }
+
+    if(typeof window._ipromNS == "undefined"){
+        (function(a,g,b,c){a[c]=a[c]||function(){
+            "undefined"===typeof a.ipromNS?(a[c].q=a[c].q||[]).push(arguments):a.ipromNS.execute(arguments)};
+            var k=function(){var b=g.getElementsByTagName("script")[0];return function h(f){var e=f.shift();a[c]("setConfig",{server:e});
+                var d=document.createElement("script");0<f.length&&(d.onerror=function(){a[c]("setConfig",{blocked:!0});h(f)});
+                d.src="//cdn."+e+"/ipromNS.js";d.async=!0;d.defer=!0;b.parentNode.insertBefore(d,b)}}(),e=b;"string"===typeof b&&(e=[b]);k(e)
+        })(window, document,[ "ipromcloud.com"],"_ipromNS");
+
+        _ipromNS('init', {
+            sitePath      : [ 'pravicentral', 'iyytcaiiuvoosoke' ]
+        });
+    }
+
+    var adTag = Math.round(Math.random() * (new Date()).getTime());
+    document.write('<div id="iprom_adtag_'+ adTag +'"></div>');
+
+    var data = {};
+    
+    try{    
+        data = JSON.parse(decodeURIComponent('%7B%22ad_id%22%3A310782%2C%22campaign_id%22%3A84762%2C%22format_id%22%3A1%2C%22cpm%22%3A0%2C%22ad_settings%22%3A%7B%22creative%22%3A%7B%22type%22%3A%22image%22%2C%22src%22%3A%22%5C%2F%5C%2Fa.ipromcloud.com%5C%2F2019%5C%2F84761%5C%2Fc847509530613eb34a6c9066b16fcc45_160.gif%22%2C%22width%22%3A160%2C%22height%22%3A600%2C%22layer%22%3A0%2C%22transparency%22%3A%22opaque%22%7D%2C%22target_frame%22%3A%22_blank%22%2C%22height%22%3A600%2C%22width%22%3A160%2C%22ad_choices%22%3A%7B%22enabled%22%3A0%7D%7D%2C%22external_code%22%3A%22%22%2C%22target_arr%22%3A%5B%22https%3A%5C%2F%5C%2Fsi.hit.gemius.pl%5C%2Flshitredir%5C%2Fid%3DzaBLm67qEAaQLXdrG03PxrPpHXKyVEd6_CWF_IEn9Wb.g7%5C%2Ffastid%3Diotplldbrgchojigobxwwzvlielq%5C%2Fstparam%3Dxkfqkkposx%5C%2Fnc%3D0%5C%2Fgdpr%3D0%5C%2Fgdpr_consent%3D%5C%2Furl%3Dhttps%3A%5C%2F%5C%2Fwww.bmw-motorrad.si%3Futm_campaign%3D2019%20BMW%20Motorrad%20%26utm_source%3Dtracking%26utm_medium%3D%5C%2FIprom_160x600%22%5D%2C%22iframe%22%3A1%2C%22mapper%22%3A%22core9%22%7D'));
+    }catch(e){
+        console.log("Programatic CI Ad: 310782 ", e);
+    }
+    
+    data.container_id = "iprom_adtag_" + adTag;
+    data.zone_id = 1542;
+    data.tracking_links = {
+        "c": "//central.iprom.net/adserver/click.ad/apiclick/iyytcaiiuvoosoke,160x600,44742,1556618209".replace("http:", "").replace("https:", ""),
+        "i": "//central.iprom.net/adserver/get.ad?vlog=21b5d83bd9fb200ab0de56760ad758d4&js=1&z=1542&t=js&sid=iyytcaiiuvoosoke&ssid=&m=pravicentral&icat=&adid=310782&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "v": "//core.iprom.net/log/view/?z=1542&t=js&sid=" + _iprom_s + "&ssid=&m=pravicentral&iact=inView&icat=&adid=310782&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "e": "//core.iprom.net/log/event/?z=1542&t=js&sid=" + _iprom_s + "&ssid=&m=pravicentral&iact=&icat=&adid=310782&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "ai": "[asci_impression]".replace("http:", "").replace("https:", "")
+    };
+
+    _ipromNS('displayAd', data, window );
+})();

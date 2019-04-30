@@ -1,0 +1,66 @@
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            oldonload();
+            func();
+        }
+    }
+}
+
+function prepareMenu() {
+
+          if (!document.getElementsByTagName) return false;
+          if (!document.getElementById) return false;
+          
+          if (!document.getElementById("menu")) return false;
+          var menu = document.getElementById("menu");
+
+          var root_li = menu.getElementsByTagName("li");
+          for (var i = 0; i < root_li.length; i++) {
+              var li = root_li[i];
+
+              var child_ul = li.getElementsByTagName("ul");
+              if (child_ul.length >= 1) {
+                  li.onmouseover = function () {
+
+					if (!this.getElementsByTagName("ul")) return false;
+                      var ul = this.getElementsByTagName("ul");
+                      ul[0].style.display = "block";
+					  
+					  if (ul[0].className == 'mdomov') {
+					  		ul[0].parentNode.className = 'cez_domov';
+					  } else if (ul[0].className == 'torrenti') {
+							 ul[0].parentNode.className = 'cez_torrenti';
+				      } else if (ul[0].className == 'skupnost') {
+							 ul[0].parentNode.className = 'cez_skupnost'; 
+					  } else if (ul[0].className == 'profil') {
+							 ul[0].parentNode.className = 'cez_profil'; 
+					  } else if (ul[0].className == 'podpora') {
+							 ul[0].parentNode.className = 'cez_podpora';
+					  } else if (ul[0].className == 'partis') {
+							 ul[0].parentNode.className = 'cez_partis';
+					  } else {
+					  		 ul[0].parentNode.className = 'cez1';
+					  }
+                      return true;
+                  }
+                  li.onmouseout = function () {
+                      if (!this.getElementsByTagName("ul")) return false;
+                      var ul = this.getElementsByTagName("ul");
+                      ul[0].style.display = "none";
+                    ul[0].parentNode.className = 'cez2';                    
+                      return true;
+                  }
+              }
+          }
+          
+          return true;
+}
+
+addLoadEvent(prepareMenu);
+
+// DropDownMenu js v osnovi napisal Miha Hribar, hvala!
+// http://hribar.info

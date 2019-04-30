@@ -1,0 +1,260 @@
+var _iprom_top_url = '';try { var _td = top.document || document; _iprom_top_url = escape(_td.location.href.replace(/#.*/,"")); } catch(err) {}var _iprom_ci_premium_displayed = _iprom_ci_premium_displayed || false;if (typeof(AdNum)=='undefined') { AdNum = 1; } else { AdNum++; }
+var _ipromNumAd = _ipromNumAd || [];
+iprom_banner=false;var _ipromZoneID = '33';
+var cam=''; var ad=''; var no_camp=no_camp||''; var no_zone=no_zone||''; var pref_camp=pref_camp||'';
+if ((typeof(iprom_forced_campaign)!='undefined')&&(iprom_forced_campaign.length>0)) {  cam='camp='+iprom_forced_campaign+';'; }
+if ((typeof(iprom_forced_ad)!='undefined')&&(iprom_forced_ad.length>0)) { ad='ad='+iprom_forced_ad+';'; }
+if ((typeof(iprom_no_campaign)!='undefined')&&(iprom_no_campaign.length>0)) { no_camp='no_camp='+iprom_no_campaign+';'; }
+if ((typeof(iprom_pref_campaign)!='undefined')&&(iprom_pref_campaign.length>0)) { pref_camp='pref_camp='+iprom_pref_campaign+';'; }
+if ((typeof(iprom_no_zone)!='undefined')&&(iprom_no_zone.length>0)) { no_zone='no_zone='+iprom_no_zone+';'; }
+ var pref_no_camp=pref_no_camp||'';
+if ((typeof(iprom_pref_no_campaign)!='undefined')&&(iprom_pref_no_campaign.length>0)) { pref_no_camp='pref_no_camp='+iprom_pref_no_campaign+';'; }
+var _i_svgsupport = false;try { _i_svgsupport = document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Shape", "1.0") || document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1"); } catch (err) {};
+var flash=false;var flash4=false; var flash5=false; var flash6=false; var flash7=false;
+document.write("<span ID='placeHolder"+AdNum+"'></span>");
+if (typeof(K_Word)=='undefined') { K_Word = 'null'; }
+var agt=navigator.userAgent.toLowerCase();major = parseInt(navigator.appVersion);minor = parseFloat(navigator.appVersion);
+isIE = (document.all)?true:false;var res = screen.width+"x"+screen.height;
+function _igetTLD() {var h = document.location.hostname.split('.');if (h.length > 1) {return h[(h.length-2)]+"."+h[(h.length-1)];}return h[0];}
+if (typeof(_iprom_consent)=='undefined') {_iprom_consent = false;}var _iccons = _ipromGC("cc_advertising") || _ipromGC("ALLOW_COOKIES") || '';
+if (_iccons && ((_iccons == 'on')||(_iccons == 'yes')||(_iccons == 'true')||(_iccons == 'always')||(_iccons.indexOf("oglasevalski")>=0))) { _iprom_consent = true; }
+
+function _ipromOptout(){winwidth=600;if(screen.width<winwidth){winwidth=screen.width}var e=window.open("http://adserver.iprom.net/optout/","iprom_optout_win","width="+winwidth+",height=450,top=0,left=0,location=0,scrollbars=1,directories=0,status=0,menubar=0,toolbar=0,resizable=0");e.focus();return false}
+function getFlashVersion(){
+   // ie
+   try {
+     try {
+       var axo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash.6');
+       try { axo.AllowScriptAccess = 'always'; }
+       catch(e) { return '6,0,0'; }
+     } catch(e) {}
+     return new ActiveXObject('ShockwaveFlash.ShockwaveFlash').GetVariable('$version').replace(/\D+/g,',').match(/^,?(.+),?$/)[1];
+   // other browsers
+   } catch(e) {
+     try {
+       if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+         return (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]).description.replace(/\D+/g,",").match(/^,?(.+),?$/)[1];
+       }
+     } catch(e) {}
+   }
+   return '0,0,0';
+}
+var flash = 0;
+flash = getFlashVersion().split(',').shift();
+function _ipromGC(b){var c,a,e,d=document.cookie.split(";");for(c=0;c<d.length;c++){a=d[c].substr(0,d[c].indexOf("="));e=d[c].substr(d[c].indexOf("=")+1);a=a.replace(/^\s+|\s+$/g,"");if(a==b){return unescape(e)}}};
+var _itmlast = _ipromGC("_iAdT");
+_itmdata = '';if (_itmlast) {_itmdata = ';tmd='+escape(_itmlast);document.cookie = '_iAdT=null; path=/; expires=Thu, 01-Jan-1970 00:00:01 GMT';}
+
+var _1stParty = false;
+
+/*try {
+var _1stParty = false;
+var _idt = new Date(); _idt.setTime(_idt.getTime()+2000);
+document.cookie = "ifst=true; expires="+_idt.toGMTString()+"; path=/; domain=."+_igetTLD();
+if (_ipromGC("ifst")) { _1stParty = true; }
+} catch(err) {};
+*/
+
+try {
+var _pref_c = _ipromGC("iprefc");
+if ('0'!='0') { _pref_c='0'; }
+if (_pref_c) {
+	var iprefcData = _pref_c.split(":");
+	if (iprefcData[1] == 'p') {
+		if (iprefcData[2] > 0) {
+			var _prefc_cnt = _prefc_cnt || false;
+			if (!_prefc_cnt) {
+				iprefcData[2]--;
+				document.cookie = "iprefc="+iprefcData.join(":")+"; path=/; domain=."+_igetTLD();
+				_prefc_cnt = true;
+			}
+			iprom_pref_campaign = iprefcData[0];
+			pref_camp='pref_camp='+iprom_pref_campaign+';';
+		} else {
+			var _idt = new Date(); _idt.setTime(_idt.getTime()-1000);
+			document.cookie = "iprefc=; expires="+_idt.toGMTString()+"; path=/; domain=."+_igetTLD();
+		}
+	}
+}
+} catch(err) {};
+
+var RmCaching = new Date();
+document.write('<script src="//adserver.iprom.net/adserver7/Impression?z=33;t=js;sid=naslovnica;m=partis;'+ad+cam+no_camp+pref_camp+pref_no_camp+no_zone+'ref=https://www.partis.si/prva;iconsent='+_iprom_consent+';num='+AdNum+';kw='+K_Word+';flash='+flash+';svg='+_i_svgsupport+';res='+res+';re='+encodeURIComponent(document.referrer)+';1st='+_1stParty+';rmc='+RmCaching.getTime()+_itmdata+';cpremium='+_iprom_ci_premium_displayed+';url='+_iprom_top_url+'" type="text/javasc'+'ript"\>');
+document.write('</');
+document.write('script\>');
+
+// vedenjsko (return code)
+//function iprom_return_code() { // za _iprom_koda_oglas_prikazan=0
+if (typeof(_iprom_koda_oglas_prikazan)!='undefined') {
+if (typeof(_iprom_koda_campaign)!='undefined') {
+if (_iprom_koda_campaign && _iprom_koda_oglas_prikazan==0) {
+document.write('<SCRIPT src="//adserver.iprom.net/adserver7/Impression?z=33;t=js;sid=naslovnica;m=partis;ie5up='+IE5up+';'+ad+cam+no_camp+pref_camp+pref_no_camp+no_zone+'nocamp='+_iprom_koda_campaign+';ref=https://www.partis.si/prva;iconsent='+_iprom_consent+';num='+AdNum+';kw='+K_Word+';flash='+flash+';svg='+_i_svgsupport+';res='+res+';rmc='+RmCaching.getTime()+'" LANGUAGE=Javascript\>');
+document.write('</');
+document.write('SCRIPT\>');
+}
+}
+}
+//}
+
+
+function _iEvent(_iadid,_icategory,_iaction) {
+var _iLoggerURL = '//adserver.iprom.net/adserver7/iLogger?z=33;t=js;sid=naslovnica;m=partis;iconsent='+_iprom_consent+';cb=' + (new Date().getTime()) + ';adid=';if ((typeof(_iadid)!='undefined') && (_iadid)) { _iLoggerURL += _iadid + ''; } else { _iLoggerURL += ''; }if (typeof(_iaction)!='undefined') { _iLoggerURL += ';iact=' + escape(_iaction); }
+if (typeof(_icategory)!='undefined') { _iLoggerURL += ';icat=' + escape(_icategory); }
+_iLoggerURL += ';resx=' + escape(screen.width);
+_iLoggerURL += ';resy=' + escape(screen.height);
+var _ilogger = document.createElement('script'); _ilogger.type = 'text/javascript';
+_ilogger.src = _iLoggerURL;var _is = document.getElementsByTagName('script')[0];
+_is.parentNode.insertBefore(_ilogger, _is);
+}
+if(typeof  window.log9request == "undefined" ){
+
+	window.log9request = function( settings ) {
+
+		var i = document.createElement('img');
+			i.src = "//core.iprom.net/log/request/?" +
+				"z="        + ((settings.z)?    settings.z: ''    ) +
+				"&ad="      + ((settings.ad )?  settings.ad: ''   ) +
+				"&m="       + ((settings.m )?   settings.m: ''    ) +
+				"&sid="     + ((settings.sid)?  settings.sid: ''  ) +
+				"&ssid="    + ((settings.ssid)? settings.ssid: '' ) +
+				"&ch="      + ((settings.ch)?   settings.ch: ''   ) +
+				"&kw="      + ((settings.kw)?   settings.kw: ''   ) +
+				"&rdr="     + ((settings.rdr)?  settings.rdr: ''  ) +
+				"&e="       + ((settings.e)?    settings.e: ''    ) +
+				"&v="       + ((settings.v)?    settings.v: ''    ) +
+				"&c="       + ((settings.c)?    settings.c: ''    ) +
+				"&resx="    + ( window.screen.width               ) +
+				"&resy="    + ( window.screen.height              ) +
+				"&referer=" + ((settings.ref)? encodeURIComponent(settings.ref) : encodeURIComponent(window.location.href) ) +
+				"&time="     + ((+new Date()) )+
+				"&flash=0&lcl=0&sct=";
+	};
+}
+// za logiranje videoShadow Oglasov
+if (typeof(_iprom_instream_layer)=='undefined'||_iprom_instream_layer=='') { _iprom_instream_layer='_iprom_inStream'; }
+if (typeof(_iprom_instream_type)!='undefined'&&_iprom_instream_type!='') {
+    document.write('<div id="iinstreamZERO" style="position:absolute; width:1px; height:1px; left: -1000px; top: -1000px; z-index:9001;"></div>');
+    var iprom_isIE = navigator.userAgent.indexOf("MSIE") > -1;
+    var mx,my;
+    var iprom_instream_div=document.getElementById(_iprom_instream_layer);
+    var plx=iprom_instream_div.style.width.replace(/px/,"");
+    var ply=iprom_instream_div.style.height.replace(/px/,"");
+    if (!plx.match(/^[0-9]+/)) { plx=iprom_instream_div.offsetWidth; }
+    if (!ply.match(/^[0-9]+/)) { ply=iprom_instream_div.offsetHeight; }
+    var iprom_alphanum=0;
+	function iprom_getRealPos(el,which) {
+	    var iPos = 0;
+	    while (el.offsetParent !=null) {
+		    iPos += el["offset" + which];
+		    el = el.offsetParent;
+	    }
+	    iPos += el["offset" + which];
+	    return iPos;
+	}
+	function iprom_getPlay(ky) {
+	    var sx; var sy; var gx; var gy;
+	    if (ky.match(/youtube2/i)) {
+            sx=0; sy=0; gx=plx-1; gy=ply-1;
+            var tab=[[sx,sy,gx,gy]];
+            return tab; // preko celotnega
+	    } else if (ky.match(/youtube/i)) {
+            var tab=[[0,0,0,0],[0,0,0,0]];
+            /* star youtube
+                if (plx<=405) { // gumb levo spodaj
+                sx=Math.round(((60/400)*plx)/2);
+                sy=Math.round(((36/337)*ply)/2);
+                gx=Math.round(((46/400)*plx)/2);
+                gy=Math.round(((22.5/337)*ply)/2);
+            } else {
+                sx=31;sy=17;gx=24;gy=11;
+            }
+            tab[0]=[(sx-gx),(ply-(sy+gy)),(sx+gx),(ply-(sy-gy))];
+            if (plx<=405) { // gumb v sredini
+                sx=Math.round(plx/2);
+                sy=Math.round(((300/337)*ply)/2);
+                gx=Math.round(((100/400)*plx)/2);
+                gy=Math.round(((80/337)*ply)/2);
+            } else {
+                sx=Math.round(plx/2);
+                sy=Math.round((ply-36)/2);
+                gx=50;gy=40;
+            }
+            tab[1]=[(sx-gx),(sy-gy),(sx+gx),(sy+gy)];
+            */
+            // zgornji del
+            sx=0; sy=0; gx=plx-1; gy=ply-40;
+            tab[0]=[sx,sy,gx,gy];
+            // gumb spodaj
+            sx=0; sy=ply-26; gx=59; gy=ply-1;
+            tab[1]=[sx,sy,gx,gy];
+            return tab;
+	    } else if (ky.match(/google/i)) {
+		sx=32; sy=ply-16; gx=30; gy=12;
+		var tab=[[(sx-gx),(sy-gy),(sx+gx),(sy+gy)]];
+		return tab;
+	    } else if (ky.match(/jwflv/i)) {
+		sx=0; sy=0; gx=plx-1; gy=ply-1;
+		var tab=[[sx,sy,gx,gy]];
+		return tab;
+	    } else {
+		return 0;
+	    }
+	}
+	function iprom_getMouseXY(e) {
+		if (iprom_isIE) { // za IE
+			mx = event.clientX;
+			my = event.clientY;
+		} else {  // za NS
+			mx = e.pageX;
+			my = e.pageY;
+		}
+		return true;
+	}
+	function iprom_click(e) {
+	    var klig;
+	    if (!iprom_alphanum) {
+		    if (!e) var e = window.event;
+		    if (e.which) klig = (e.which == 1);
+		    else if (e.button) { klig = (e.button == 1); }
+		    if (klig) {
+			iprom_getMouseXY;
+			var i=0;
+			while (iprom_play[i]) {
+			    kx1=ofx+iprom_play[i][0]; ky1=ofy+iprom_play[i][1];
+			    kx2=ofx+iprom_play[i][2]; ky2=ofy+iprom_play[i][3];
+			    // alert(kx1+','+ky1+','+kx2+','+ky2);
+			    if (iprom_isIE) {
+				kx1-=document.documentElement.scrollLeft;
+				kx2-=document.documentElement.scrollLeft;
+				ky1-=document.documentElement.scrollTop;
+				ky2-=document.documentElement.scrollTop;
+				//mx+=document.documentElement.scrollLeft; my+=document.documentElement.scrollTop;
+				//alert(mx+'>='+kx1+'&&'+mx+'<='+kx2+'&&'+(my)+'>='+ky1+'&&'+(my)+'<='+ky2);
+			    }
+			    if (mx>=kx1&&mx<=kx2&&my>=ky1&&my<=ky2) {
+				//alert('klik');
+				
+				    //alert('<img src="//adserver.iprom.net/adserver7/LogZero?z=33;t=js;sid=naslovnica;m=partis;iconsent='+_iprom_consent+';flash='+flash+';kw=;tm='+RmCaching.getTime()+'" width=1 height=1>');
+				    document.getElementById('iinstreamZERO').innerHTML='<img src="//adserver.iprom.net/adserver7/LogZero?z=33;t=js;sid=naslovnica;m=partis;flash='+flash+';kw=;tm='+RmCaching.getTime()+'" width=1 height=1>';
+				    if (typeof(iprom_AD_video_shown)!='undefined')
+				    {
+					    iprom_Init_InstreamAd(AdNum);
+				    }
+				    iprom_alphanum++;
+			    }
+			    i++;
+			}
+		    }
+	    }
+	}
+     var iprom_play=iprom_getPlay(_iprom_instream_type);
+     if (iprom_play&&iprom_play.length>0) {
+	var ofx=iprom_getRealPos(iprom_instream_div, "Left");
+	var ofy=iprom_getRealPos(iprom_instream_div, "Top");
+	if (document.layers) { document.captureEvents(Event.MOUSEUP); }
+	document.onmouseup=iprom_click;
+	if (!iprom_isIE) document.captureEvents(Event.MOUSEMOVE)
+	document.onmousemove=iprom_getMouseXY;
+    }
+
+}

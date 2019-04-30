@@ -1,0 +1,24 @@
+	ci_root_host = 'central.iprom.net';
+	_iprom_a = '30586';
+	_iprom_last_ad = '30586';
+	//_iprom_last_campaign = '5838';
+	_iprom_d = '728x90';
+	_iprom_f = 'htm';
+	_iprom_pd = false;
+	_iprom_p = true;
+	_iprom_ct = 'http://central.iprom.net/ad.click?/==' + _i_benc('1535,'+_iprom_s+',728x90,30586,1556618191,') + '::';
+	_iprom_ec = '';
+	_iprom_alt = 'Klikni za vec informacij';
+	_iprom_countimpr = '';
+	_iprom_logimp = '';
+    var dim = _iprom_d.split("x");
+    var _iprom_w = parseInt(dim[0]);
+    var _iprom_h = parseInt(dim[1]);
+
+    if (!(_iprom_p)) {
+    document.write('<table border="0" width="'+_iprom_w+'" height="'+_iprom_h+'" cellpadding="0" cellspacing="0"><tr><td><div style="width:'+_iprom_w+'px !important;height:'+_iprom_h+'px !important;position:absolute;z-index:150;background:transparent !important;"><a href="'+_iprom_ct+'" target="_blank"><img src="//central.iprom.net/1px.gif" style="width:'+_iprom_w+'px !important;height:'+_iprom_h+'px !important;" border="0"></a></div>');
+    }
+document.write(unescape('%3C%21--%2F%2A%0A%20%20%2A%0A%20%20%2A%20ConnectAd%20Realtime%20Sync%20Tag%2A%0A%20%20%2A%2F--%3E%0A%3Cscript%20src%3D%22%2F%2Fe.connectad.io%2Fsync%3Fpid%3D67c6a1e7ce56d3d6fa748ab6d9af3fd7%26ads%3D728x90%26t%3D3456%26c%3D1035%26dlang%3Dsl%26sid%3Ddf25a7abcd7b757e1da566713fef38b9%26del%3Dsync%26scat%3DIAB1%26spid%3D1035%26sdom%3Dhttps%3A%2F%2Fwww.partis.si%26spage%3Dhttps%3A%2F%2Fwww.partis.si%26gdpr%3Dx%26gdprconsent%3Dy%22%3E%3C%2Fscript%3E%0A%0A%3C%21--%2F%2A%0A%20%20%2A%0A%20%20%2A%20ConnectAd%20Realtime%20iFrame%20Tag%2A%0A%20%20%2A%2F--%3E%0A%3Cins%20data-pid%3D%2267c6a1e7ce56d3d6fa748ab6d9af3fd7%22%20data-zone%3D%22dssp%22%20data-ads%3D%22728x90%22%20data-t%3D%223456%22%20data-c%3D%221035%22%20data-dlang%3D%22sl%22%20data-sid%3D%22df25a7abcd7b757e1da566713fef38b9%22%20data-scat%3D%22IAB1%22%20data-sdom%3D%22https%3A%2F%2Fwww.partis.si%22%20data-spid%3D%221035%22%20data-del%3D%22iframe%22%20data-spage%3D%22https%3A%2F%2Fwww.partis.si%22%20data-gdpr%3D%22x%22%20data-gdprconsent%3D%22y%22%3E%3C%2Fins%3E%0A%3Cscript%20async%20src%3D%22%2F%2Fe.connectad.io%2Fjs%2Fdiss1.js%22%3E%3C%2Fscript%3E%09%09%09'));
+    if (!(_iprom_p)) {
+    document.write('</td></tr></table>');
+    }
