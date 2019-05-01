@@ -1,0 +1,30 @@
+var parEl = this;
+try{
+	d = parent.document;
+	parEl = parent;
+} catch(e) {
+	parEl = this;
+}
+
+var _iprom_skip_ad = _iprom_skip_ad || parEl._iprom_skip_ad || "",
+    _iprom_skip_campaign = _iprom_skip_campaign || parEl._iprom_skip_campaign || "",
+    _iprom_last_ad = _iprom_last_ad || parEl._iprom_last_ad || void 0,
+    _iprom_d = _iprom_d || parEl._iprom_d || "",
+    _iprom_s = _iprom_s || parEl._iprom_s || "",
+    _iprom_w = _iprom_w || parEl._iprom_w || void 0,
+    _iprom_h = _iprom_h || parEl._iprom_h || void 0;
+if ("undefined" != typeof _iprom_last_ad && _iprom_last_ad) {
+    var _iprom_skip_ad_array = _iprom_skip_ad.split(",");
+    _iprom_skip_ad_array.push(_iprom_last_ad), _iprom_skip_ad = _iprom_skip_ad_array.join(","), "undefined" != typeof parEl._iprom_skip_ad && (parEl._iprom_skip_ad = _iprom_skip_ad)
+}
+if ("undefined" != typeof _iprom_last_campaign && _iprom_last_campaign) {
+    var _iprom_skip_campaign_array = _iprom_skip_ad.split(",");
+    _iprom_skip_campaign_array.push(_iprom_last_campaign), _iprom_skip_campaign = _iprom_skip_campaign_array.join(","), "undefined" != typeof parEl._iprom_skip_campaign && (parEl._iprom_skip_campaign = _iprom_skip_campaign)
+}
+
+// Trim whitespaces.
+if (typeof _iprom_s === 'string') {
+    _iprom_s = _iprom_s.trim();
+}
+
+document.write(unescape("%3Cscript%20src%3D%22//central.iprom.net/adserver/adserver.js%22%3E%3C/script%3E"));

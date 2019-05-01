@@ -1,0 +1,44 @@
+(function() {
+
+    try {
+        if(typeof top._ipromNS != 'undefined') _ipromNS = top._ipromNS;
+    } catch (e) {
+        // in Iframe
+    }
+
+    if(typeof window._ipromNS == "undefined"){
+        (function(a,g,b,c){a[c]=a[c]||function(){
+            "undefined"===typeof a.ipromNS?(a[c].q=a[c].q||[]).push(arguments):a.ipromNS.execute(arguments)};
+            var k=function(){var b=g.getElementsByTagName("script")[0];return function h(f){var e=f.shift();a[c]("setConfig",{server:e});
+                var d=document.createElement("script");0<f.length&&(d.onerror=function(){a[c]("setConfig",{blocked:!0});h(f)});
+                d.src="//cdn."+e+"/ipromNS.js";d.async=!0;d.defer=!0;b.parentNode.insertBefore(d,b)}}(),e=b;"string"===typeof b&&(e=[b]);k(e)
+        })(window, document,[ "ipromcloud.com"],"_ipromNS");
+
+        _ipromNS('init', {
+            sitePath      : [ 'pravicentral', 'iyytcaiiuvoosoke' ]
+        });
+    }
+
+    var adTag = Math.round(Math.random() * (new Date()).getTime());
+    document.write('<div id="iprom_adtag_'+ adTag +'"></div>');
+
+    var data = {};
+    
+    try{    
+        data = JSON.parse(decodeURIComponent('%7B%22ad_id%22%3A308947%2C%22campaign_id%22%3A84954%2C%22format_id%22%3A1%2C%22cpm%22%3A0%2C%22ad_settings%22%3A%7B%22creative%22%3A%7B%22type%22%3A%22image%22%2C%22src%22%3A%22%5C%2F%5C%2Fa.ipromcloud.com%5C%2F2019%5C%2F84950%5C%2F8d89734fca970fed200d89308b8ef764_728.jpg%22%2C%22width%22%3A728%2C%22height%22%3A90%2C%22layer%22%3A0%2C%22transparency%22%3A%22opaque%22%7D%2C%22target_frame%22%3A%22_blank%22%2C%22height%22%3A90%2C%22width%22%3A728%2C%22ad_choices%22%3A%7B%22enabled%22%3A0%7D%7D%2C%22external_code%22%3A%22%22%2C%22target_arr%22%3A%5B%22https%3A%5C%2F%5C%2Fsi.salomontrail.amersports.si%5C%2Ftrail-2019%5C%2F%3Futm_source%3DiPROM_Programmatic%26utm_medium%3Dbanner%26utm_campaign%3Dtrail-running-2019%22%5D%2C%22iframe%22%3A1%2C%22mapper%22%3A%22core9%22%7D'));
+    }catch(e){
+        console.log("Programatic CI Ad: 308947 ", e);
+    }
+    
+    data.container_id = "iprom_adtag_" + adTag;
+    data.zone_id = 1543;
+    data.tracking_links = {
+        "c": "//central.iprom.net/adserver/click.ad/apiclick/iyytcaiiuvoosoke,728x90,44431,1556618192".replace("http:", "").replace("https:", ""),
+        "i": "//central.iprom.net/adserver/get.ad?vlog=67bfeba8fb107874c56b4054c3fabef2&js=1&z=1543&t=js&sid=iyytcaiiuvoosoke&ssid=&m=pravicentral&icat=&adid=308947&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "v": "//core.iprom.net/log/view/?z=1543&t=js&sid=" + _iprom_s + "&ssid=&m=pravicentral&iact=inView&icat=&adid=308947&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "e": "//core.iprom.net/log/event/?z=1543&t=js&sid=" + _iprom_s + "&ssid=&m=pravicentral&iact=&icat=&adid=308947&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "ai": "[asci_impression]".replace("http:", "").replace("https:", "")
+    };
+
+    _ipromNS('displayAd', data, window );
+})();

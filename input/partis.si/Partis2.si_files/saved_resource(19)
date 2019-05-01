@@ -1,0 +1,44 @@
+(function() {
+
+    try {
+        if(typeof top._ipromNS != 'undefined') _ipromNS = top._ipromNS;
+    } catch (e) {
+        // in Iframe
+    }
+
+    if(typeof window._ipromNS == "undefined"){
+        (function(a,g,b,c){a[c]=a[c]||function(){
+            "undefined"===typeof a.ipromNS?(a[c].q=a[c].q||[]).push(arguments):a.ipromNS.execute(arguments)};
+            var k=function(){var b=g.getElementsByTagName("script")[0];return function h(f){var e=f.shift();a[c]("setConfig",{server:e});
+                var d=document.createElement("script");0<f.length&&(d.onerror=function(){a[c]("setConfig",{blocked:!0});h(f)});
+                d.src="//cdn."+e+"/ipromNS.js";d.async=!0;d.defer=!0;b.parentNode.insertBefore(d,b)}}(),e=b;"string"===typeof b&&(e=[b]);k(e)
+        })(window, document,[ "ipromcloud.com"],"_ipromNS");
+
+        _ipromNS('init', {
+            sitePath      : [ 'pravicentral', 'iyytcaiiuvoosoke' ]
+        });
+    }
+
+    var adTag = Math.round(Math.random() * (new Date()).getTime());
+    document.write('<div id="iprom_adtag_'+ adTag +'"></div>');
+
+    var data = {};
+    
+    try{    
+        data = JSON.parse(decodeURIComponent('%7B%22ad_id%22%3A312907%2C%22campaign_id%22%3A85844%2C%22format_id%22%3A1%2C%22cpm%22%3A0%2C%22ad_settings%22%3A%7B%22creative%22%3A%7B%22type%22%3A%22archive%22%2C%22src%22%3A%22%5C%2F%5C%2Fa.ipromcloud.com%5C%2F2019%5C%2F85843%5C%2F075e87993d83e06e200ae4120bc0c0c1%5C%2Findex.html%22%2C%22width%22%3A0%2C%22height%22%3A0%2C%22layer%22%3A1%2C%22transparency%22%3A%22opaque%22%7D%2C%22target_frame%22%3A%22_blank%22%2C%22height%22%3A600%2C%22width%22%3A160%2C%22ad_choices%22%3A%7B%22enabled%22%3A0%7D%7D%2C%22external_code%22%3A%22%22%2C%22target_arr%22%3A%5B%22https%3A%5C%2F%5C%2Fwww.moemax.si%5C%2F%3Futm_id%3DMiJru1PF.tomqP1B.opid2.opid%26utm_campaign%3Dapril_maj_ddv%26utm_medium%3Dbanner%26utm_source%3DiPROM_Programmatic%22%5D%2C%22iframe%22%3A1%2C%22mapper%22%3A%22core9%22%7D'));
+    }catch(e){
+        console.log("Programatic CI Ad: 312907 ", e);
+    }
+    
+    data.container_id = "iprom_adtag_" + adTag;
+    data.zone_id = 1542;
+    data.tracking_links = {
+        "c": "//central.iprom.net/adserver/click.ad/apiclick/iyytcaiiuvoosoke,160x600,45059,1556618323".replace("http:", "").replace("https:", ""),
+        "i": "//central.iprom.net/adserver/get.ad?vlog=004b2f81f9eab9c9e9efcc57e84962d2&js=1&z=1542&t=js&sid=iyytcaiiuvoosoke&ssid=&m=pravicentral&icat=&adid=312907&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "v": "//core.iprom.net/log/view/?z=1542&t=js&sid=" + _iprom_s + "&ssid=&m=pravicentral&iact=inView&icat=&adid=312907&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "e": "//core.iprom.net/log/event/?z=1542&t=js&sid=" + _iprom_s + "&ssid=&m=pravicentral&iact=&icat=&adid=312907&resx=" + window.screen.width + "&resy=" + window.screen.height,
+        "ai": "[asci_impression]".replace("http:", "").replace("https:", "")
+    };
+
+    _ipromNS('displayAd', data, window );
+})();

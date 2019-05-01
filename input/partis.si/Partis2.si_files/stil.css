@@ -1,0 +1,1060 @@
+body{background:#191a1a url(img/bak.gif) repeat-x;text-align:center;margin:0;padding:0 0 40px; font: normal 11px tahoma, arial;}
+a {color: #333; text-decoration: none;}
+a:hover {color: #666; text-decoration:  underline;}
+img{border:0;}
+ul {margin: 0; padding: 0;}
+.all{width:979px;margin:0 auto auto;padding:0;}
+.dildo{width:984px;height:126px;background:url(/img/bigban.gif) 187px 0px no-repeat;list-style:none;margin:0;padding:0;}
+.dildo a{display:list-item;margin:0;padding:0;}
+.logo{width:182px;height:50px;padding:46px 8px 0px 0px;}
+.logo a{width:190px;height:70px;background:url(/img/r.gif) -2px -94px;}
+.logo a:hover{width:190px;height:70px;background:url(/img/r.gif) -197px -94px;}
+.banner1{width:468px;height:80px;padding:15px 0 0 51px;}
+.logow{width:190px;height:90px;padding:0px 0 0;}
+.logow a{width:190px;height:90px;background:url(/img/winter.gif) -14px 6px;}
+.logow a:hover{width:190px;height:90px;background:url(/img/r.gif) -194px -53px;}
+.logoc{width:190px;height:90px;padding:0px 0 0;}
+.logoc a{width:190px;height:90px;background:url(/img/chr.gif) -14px 6px;}
+.logoc a:hover{width:190px;height:90px;background:url(/img/r.gif) -195px -56px;}
+.userdata{width:240px;height:80px;}
+.podatki{text-align:left;height:39px;font:normal 11px tahoma;color:#c3c3c3;padding:15px 0 0 85px;}
+.tentext{font:normal 10px tahoma;color:#c3c3c3;padding-top:2px;}
+.topper{width:979px;height:37px;background:url(/img/r.gif) 0 -777px;}
+.telo{width:939px;background:url(/img/bck.gif) 2px 0 repeat-y; text-align: justify; padding: 0px 20px 10px 20px; }
+.footerr{width:979px;height:37px;background:url(/img/r.gif) -12px -381px; text-align: left;}
+.masterfoot{width:979px;height:188px;background:url(/img/r.gif) -10px -178px;padding-top:10px; text-align:  left;}
+.usericons{list-style:none;margin:0;padding:0 0 0 57px;}
+.usericons a{display:list-item;}
+.icon1 a{background:transparent;width:18px;height:18px;}
+.icon1 a:hover{background:url(/img/r.gif) -1192px -860px;width:18px;height:18px;}
+.icon2 a:hover{background:url(/img/r.gif) -1186px -883px;width:24px;height:18px;text-align:right;}
+.icon3 a:hover{background:url(/img/r.gif) -1186px -904px;width:24px;height:18px;text-align:right;}
+.icon4 a:hover{background:url(/img/r.gif) -1186px -928px;width:24px;height:18px;text-align:right;}
+.icon5 a:hover{background:url(/img/r.gif) -1211px -928px;width:24px;height:18px;text-align:right;}
+.icon6 a{background:url(/img/icns.gif);width:19px;height:18px;text-align:right;}
+.icon6 a:hover{background:url(/img/icns.gif) -20px 0;width:19px;height:18px;text-align:right;}
+.spacer{height:18px;width:34px;}
+#menu {width: 950px;}
+#menu,#menu ul{list-style:none;margin:0 0 0 6px;padding:0;}
+#menu li{float:left;position:relative;padding:0 0 1px 7px;}
+#menu li ul{position:absolute;margin-top:0;display:none;margin-left:-8px;}
+#menu ul li ul{margin-top:-27px;margin-left:149px;}
+#menu li:hover ul ul,#menu li.over ul ul{display:none;}
+#menu a{font:normal 12px arial;display:block;color:#37414f;text-decoration:none;}
+#menu a:hover{font:normal 12px arial;color:#000;display:block;}
+.cez_domov{background:#fff;}
+.cez_torrenti{background:url(/img/r.gif) -724px -743px;}
+.cez_skupnost{background:url(/img/r.gif) -804px -743px;}
+.cez_profil{background:url(/img/r.gif) -884px -743px;}
+.cez_podpora{background:url(/img/r.gif) -964px -743px;}
+#menu ul{background:url(/img/meniback.png);background-position:bottom left;z-index:10;margin:0 0 0 -16px;padding:5px 0 24px 0;;}
+#menu ul a{font:normal 11px tahoma;color:#c3c3c3;background:transparent;display:block;text-align:left;padding:7px 0 7px 15px;}
+.apeder{width:140px;height:20px;}
+#menu ul a:hover{color:#fff;font:normal 11px tahoma;text-decoration:none;background:url(/img/r.gif) -424px -109px no-repeat;}
+#menu{z-index:1;padding-left:19px;padding-top:11px;}
+#menu ul ul{z-index:300;}
+.mdomov{width: 33px; background: url(/img/r.gif) -242px -743px;}
+.mtorrent {width: 73px; background: url(/img/r.gif) -282px -743px;}
+.mpodpora {width: 73px; background: url(/img/r.gif) -522px -743px;}
+.mpartis {width: 73px; background: url(/img/r.gif) -602px -743px;}
+.mskupnost {width: 73px; background: url(/img/r.gif) -362px -743px;}
+.mprofil {width: 73px; background: url(/img/r.gif) -442px -743px;}
+.mpartissi a:hover{background:#f90;}
+.dildo li,.usericons li{float:left;}
+.icon2 a,.icon3 a,.icon4 a,.icon5 a{background:transparent;width:24px;height:18px;text-align:right;}
+#menu li:hover ul,#menu li.over ul,#menu ul li:hover ul,#menu ul li.over ul{display:block;}
+.cez2,.mpartissi a{background:transparent;}
+.download {font: normal 10px tahoma; color: #333; width: 73px; margin-top: 5px; margin-left: 56px; height: 20px; text-align: left; }
+.upload {font: normal 10px tahoma; color: #333; width: 73px; margin-top: 5px; margin-left: 0px; height: 20px; text-align: left; }
+.ratio {font: normal 10px tahoma; color: #000; width: 73px; margin-top: 4px; margin-left: -2px; height: 20px; text-align: left; }
+.littleiskanje { width: 200px;  height: 20px; text-align: left; margin-left: -16px; }
+.iskimage {width: 25px; height: 20px;float: left; margin-bottom: -4px;}
+.iskinput {width: 160px; float: left; border: none; background: url(/img/r.gif) -4px -744px; height: 20px; padding: 4px 0px 0px 10px; font: normal 11px tahoma, arial; color: #666;}
+.img6 {width: 25px; height: 20px; background: url(/img/r.gif) -174px -744px;}
+.img7 {width: 25px; height: 20px; background: url(/img/r.gif) -203px -744px;}
+.iskforma {padding: 0px; margin: 0px;}
+.cez1,.cez_partis{background:url(/img/r.gif) -1044px -743px;}
+.navrh {margin:0px; padding: 10px 0px 0px 819px; list-style:  none;}
+.navrh li {}
+.navrh a {display: list-item; width: 100px; height: 20px; background: transparent; }
+.navrh a:hover {background: url(/img/r.gif) -585px -431px;}
+.nastevanjetit {font: bold 12px tahoma, arial; color: #b9b9b9; padding-bottom:6px;}
+.alineja a {font: normal 11px tahoma; color: #afafaf; }
+.master {list-style: none; margin: 0px; padding: 0px 0px 0px 30px;}
+.master li {float: left;}
+.menijidesno {padding: 0px 0px 0px 0px;}
+.menidesno {}
+.menidesnotop {width: 204px; height: 35px; background: url(/img/r.gif) -1022px -380px; margin-top: 10px;}
+.menidesnotit {width: 155px; height: 24px; font: normal 11px tahoma, arial; color: #f6f6f6; padding: 10px 0px 0px 15px; float: left;}
+.menidesnoskrij {width: 15px; height: 23px; float: left; padding: 5px 0px 0px 5px; background: url(/img/r.gif) -1015px -344px;}
+.menidesnopokazi {width: 15px; height: 25px; float: left; padding: 5px 0px 0px 5px; background: url(/img/icns.gif) 1px -65px;}
+.menidesnobody {width: 204px; background:  url(/img/menidesnoback.gif);}
+.menidesnobot {width: 204px; background:  url(/img/r.gif) -1020px -326px; height: 15px;}
+.donate {width: 205px; height: 106px; background:  url(/img/r.gif) -716px -449px; margin-top: 12px;}
+
+/*---------- bubble tooltip -----------*/
+a.tt{
+    position:relative;
+    z-index:24;
+    font: normal 10px tahoma; color: #ccc;
+    text-decoration:none;
+}
+a.tt span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tt:hover{ z-index:25; color: #aaaaff; background:;}
+a.tt:hover span.tooltip{
+    display:block;
+    position:absolute;
+    top:0px; left:0;
+	padding: 15px 0 0 0;
+	width:200px;
+	color: #fff;
+    text-align: center;
+
+}
+a.tt:hover span.top{
+	display: block;
+	padding: 20px 13px 0;
+    background: url(/img/bubble.png) no-repeat top;
+}
+a.tt:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	font: normal 10px tahoma; color: #ccc;
+	padding: 0 14px; 
+	background: url(/img/bubble_filler.png) repeat bottom; 
+}
+a.tt:hover span.bottom{
+	display: block;
+	padding:10px 8px 10px;
+	color: #548912;
+    background: url(/img/bubble.png) no-repeat bottom;
+}
+
+/*---------- end bubble tooltip -----------*/
+
+
+/*---------- bubble tooltip2 -----------*/
+a.tte{
+    position:relative;
+    z-index:24;
+    font: normal 11px tahoma; color: #000;
+    line-height:  15px;
+    text-decoration:none;
+}
+a.tte span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tte:hover{ z-index:25; color: #5d0c0c; background:;}
+a.tte:hover span.tooltipe{
+    display:block;
+    position:absolute;
+    top:0px; left:0;
+	padding: 0px 0 0 0;
+	margin-left: 680px;
+	margin-top: -10px;
+	width:200px;
+	color: #5d0c0c;
+    text-align: center;
+
+}
+a.tte:hover span.top{
+
+	display: block;
+	padding: 15px 13px 12px 20px;
+    background: url(/img/bubble2.gif) no-repeat top;
+    text-align: left;
+}
+a.tte:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	font: normal 10px tahoma; color: #5d0c0c;
+	padding: 0 14px; 
+	background: url(/img/bubble_filler2.gif) repeat bottom; 
+}
+a.tte:hover span.bottom{
+	display: block;
+	padding:3px 8px 10px;
+	color: #5d0c0c;
+    background: url(/img/bubble2.gif) no-repeat bottom;
+}
+
+/*---------- end bubble tooltip2 -----------*/
+
+.oleft {width: 30px; height: 23px; background: url(/img/icons/exclamation.png) 5px 6px no-repeat; float: left;}
+
+.alineje {margin: 0px; padding: 0px 0px 0px 10px; list-style: none;}
+.alineje li {float: none;}
+
+.nastevanje {width: 140px; padding: 15px 0px 0px 0px; }
+
+.alineja {margin-top:  3px;}
+.alineja a {padding: 0px 0px 0px 20px; background: url(/img/alineja.gif) 0px 1px no-repeat; text-decoration:  none; }
+.alineja a:hover {padding: 0px 0px 0px 20px; background: url(/img/alineja.gif) 0px -14px no-repeat; text-decoration:  none; color: #8a8a8a;}
+
+.bannerspodnji {width: 500px; padding: 33px 0px 0px 4px;}
+
+.masterfootzgoraj {width: 972px; height: 132px;}
+.sslon {font: normal 9px tahoma, arial; color: #b4b4b4;padding: 1px 0px 0px 83px; background: url(/img/icns.gif) 146px -38px no-repeat;  width: 104px; }
+.ssloff {font: normal 9px tahoma, arial; color: #b4b4b4;padding: 1px 0px 0px 83px; background: url(/img/icns.gif) 143px -53px no-repeat;  width: 104px; }
+.copyright {font: normal 9px tahoma, arial; color: #969797; padding: 4px 0px 0px 315px; line-height: 14px;}
+.copyright a {color:#969797; text-decoration: underline; }
+.copyright a:hover {color:#666; text-decoration: none;; }
+.novicec {width: 392px; float: left;}
+.latestc {width: 326px; float: left; padding: 5px 0px 0px 10px;}
+.latesttabs {margin: 0px; padding: 0px;  list-style: none; height: 18px;}
+.latesttabs li {float: left;}
+.latesttabs a {display: list-item;}
+.latesttabsli a {width: 80px; height: 14px; text-align:  center; font: normal 9px tahoma, arial; color: #5c5c5c; text-decoration: none; background: url(/img/r.gif) -601px -463px; padding: 4px 0px 0px 0px; margin-right: 5px;}
+.latesttabsli a:hover {width: 80px; height: 14px; text-align:  center; font: normal 9px tahoma, arial; color: #fff; text-decoration: ; background: url(/img/r.gif) -601px -498px; padding: 4px 0px 0px 0px; margin-right: 5px;}
+.latesttabsli2 a {width: 80px; height: 14px; text-align:  center; font: normal 9px tahoma, arial; color: #5c5c5c; text-decoration: none; background: url(/img/r.gif) -601px -463px; padding: 4px 0px 0px 0px; margin-right: 5px;}
+.latesttabsli2 a:hover {width: 80px; height: 14px; text-align:  center; font: normal 9px tahoma, arial; color: #000; text-decoration: none; background: url(/img/r.gif) -601px -463px; padding: 4px 0px 0px 0px; margin-right: 5px;}
+.latesttabsliactive a{width: 80px; height: 14px; text-align:  center; font: normal 9px tahoma, arial; color: #fff; text-decoration: none; background: url(/img/r.gif) -601px -498px; padding: 4px 0px 0px 0px; margin-right: 5px;}
+.latestrest {width: 303px; height: 300px; background: url(/img/r.gif) -970px -430px ; padding-top: 10px;}
+.latestrss {width: 14px; height: 14px; background:  url(/img/icns.gif) 0px -20px; }
+.spacer {height: 16px; width: 33px;}
+.spacer2 {height: 16px; width: 118px;}
+.spacer3 {height: 16px; width: 95px;}
+.latest2 {padding-top: 14px;}
+.latest1 {padding-top: 8px;}
+.stat {width: 195px; height: 22px; background: url(/img/r.gif) -1006px -270px; padding-top: 6px;}
+.stat1 {width: 90px; float: left; font: normal 10px tahoma, arial; color: #333; padding: 5px 0px 0px 23px;}
+.stat2 {width: 70px; float: left; font: bold 10px tahoma, arial; color: #fff; padding: 5px 0px 0px 10px;}
+.vprasanje {font: normal 11px tahoma, arial; color: #333; padding: 7px 20px 10px 14px;}
+.odgovori {list-style:  none; padding: 0px 0px 0px 17px;}
+.odgovori li {}
+.odgovori a {display: list-item;}
+.odgovor a {width: 138px; padding: 8px 0px 0px 25px; background: url(/img/vote.gif) 0px 1px no-repeat; font: normal 10px tahoma, arial; text-decoration: none; color: #333;}
+.odgovor a:hover {width: 138px; padding: 8px 0px 0px 25px; background: url(/img/vote.gif) 0px -49px no-repeat; font: normal 10px tahoma, arial; text-decoration: none; color: #000;}
+.anketaarhivhold {padding: 15px 0px 0px 130px;}
+.butt {list-style: none; margin: 0px;}
+.butt li {}
+.butt a {display: list-item; width: 58px; height: 16px;}
+.buttli a {font: normal 9px tahoma, arial; color: #333; text-align:  center; padding: 4px 0px 0px 0px; background: url(/img/r.gif) -615px -688px; text-decoration: none;}
+.buttli a:hover {font: normal 9px tahoma, arial; color: #000; text-align:  center; padding: 4px 0px 0px 0px; background: url(/img/r.gif) -681px -688px; text-decoration: none;}
+.lattehold {padding: 0px 0px 0px 11px;}
+.latte {width: 269px; height: 43px; border-bottom: 1px #ccc solid; padding: 11px 0px 0px 9px; text-align:  left;}
+.latteh {width: 269px; height: 43px; border-bottom: 1px #ccc solid; padding: 11px 0px 0px 9px; text-align:  left; background: #fff;}
+.latteleft {float: left; width: 40px;text-align:  left; }
+.latteright {float: left; width: 218px;text-align:  left; padding: 0px 0px 0px 8px;}
+.latteright a {font: bold 11px tahoma, arial; color: #5d5c5c; text-decoration:  none;}
+.latteright a:hover {font: bold 11px tahoma, arial; color: #666; text-decoration:  none;}
+.latteopis {font: normal 9px tahoma, arial; color: #919090; padding: 3px 0px 0px 1px;}
+.latimg {width: 37px; height: 34px; background: url(/img/pback.gif);}
+.opisleft {width: 180px; float: left; height: 25px;}
+.opisright {float: left; background: url(/img/r.gif) -812px -687px; width: 18px; height: 16px; padding: 4px 0px 0px 16px;}
+.note {width: 386px; height: 97px; background: url(/img/r.gif) -221px -628px;}
+.notehold {padding: 16px 0px 0px 4px; margin-bottom: -10px;}
+.notetop {height: 30px; width: 386px;}
+.notetit {font: normal 12px tahoma, arial; width: 283px; float: left; float: left; padding: 17px 0px 0px 63px; color: #666;}
+.noteclose {float: left; padding-top: 12px;}
+.notebot {font: normal 9px tahoma, arial; color: #666; padding: 6px 10px 0px 65px;}
+.conhold {padding: 10px 0px 0px 10px;}
+.newzline2 {background: url(/img/slice.gif); width: 692px; height: 10px;}
+.newztit2 {font: normal 18px tahoma, arial; float: left; width: 250px; color: #666; padding: 0px 0px 0px 0px;}
+.newztit2red {font: normal 18px tahoma, arial; float: left; width: 250px; color: red; padding: 0px 0px 0px 0px;}
+.newzline {background: url(/img/r.gif) -219px -604px; width: 362px; height: 10px;}
+.newz { width: 362px; height: 25px;}
+.newztit {font: normal 18px tahoma, arial; float: left; width: 250px; color: #666; padding: 0px 0px 0px 2px;}
+.arhivtab { float: left; padding: 7px 0px 0px 0px;}
+.tagzzhold {padding: 5px 0px 0px 2px;}
+.tagzz {padding:9px 20px 9px 6px; text-align:  center; background:  #f2f2f2; width: 334px;}
+.tagzz a {text-decoration: none; padding: 8px; color: #666;}
+.tagzz a:hover {text-decoration: underline; color: #333;}
+.newslisting {padding: 0px 0px 0px 11px;}
+.nowtit {width: 310px; padding: 13px 0px 0px 14px; float: left;}
+.nowtit a {font: normal 14px tahoma, arial; color: #595959; text-decoration: none; display:block;}
+.nowtit a:hover {font: normal 14px tahoma, arial; color: #333; text-decoration: none;}
+.nowexp {float:left; padding: 5px 0px 0px 0px;}
+.now2 {width: 362px; height: 42px; background: url(/img/nwz.gif) 0px -48px; margin-top: 4px;}
+.nowobv {width: 362px; height: 42px; background: url(/img/obv.gif) 2px 2px no-repeat; margin-top: 4px;}
+.now3 {width: 362px; height: 42px; background: url(/img/nwz.gif) 0px -95px; margin-top: 4px;}
+.now4 {width: 362px; height: 42px; background: url(/img/nwz.gif) 0px -143px; margin-top: 4px;}
+.newcontent {font: normal 11px tahoma, arial; color: #595959; padding: 13px 31px 0px 12px; text-align: justify; line-height: 16px;}
+.newslika {width: 80px; height: 60px; float: left; margin: 2px 7px 0px 0px;}
+.newframe {width: 74px; height: 55px; }
+.newbar {width: 360px;height: 30px;padding-bottom:  6px;padding-top: 6px;}
+.butt2 {list-style: none; margin: 0px;}
+.butt2 li {}
+.butt2 a {display: list-item; width: 103px; height: 19px;}
+.buttli2 a {font: normal 9px tahoma, arial; color: #333; text-align:  center; padding: 6px 0px 0px 4px; background: url(/img/r.gif) -606px -650px; text-decoration: none;}
+.buttli2 a:hover {font: normal 9px tahoma, arial; color: #000; text-align:  center; padding: 6px 0px 0px 4px; background: url(/img/r.gif) -713px -650px; text-decoration: none;}
+.beridalje {float: left; padding: 2px 8px 0px 175px;}
+.komentarji {float: left;}
+.listinghold {padding: 0px 0px 0px 12px;}
+.listingx {padding: 7px 9px 0px 7px; width: 160px; height: 39px; border-bottom: 1px #ccc solid;}
+.listingxh {padding: 7px 9px 0px 7px; width: 160px; height: 39px; border-bottom: 1px #ccc solid; background:  #fff;}
+.listinglink {width: 115px; float: left; padding: 1px 0px 0px 5px; text-align:  left; }
+.listinglink a {font: normal 11px tahoma, arial; color: #333; text-decoration: none;}
+.listinglink a:hover {font: normal 11px tahoma, arial; color: #666; text-decoration: none;}
+.listingimg {width: 40px; float: left; }
+.listingz {padding-top: 5px;}
+.huge {width: 690px; background: url(/img/huge.gif) no-repeat;}
+.hugein { padding: 16px 20px 10px 20px;}
+.hugebot {width: 690px; height: 15px; background: url(/img/huge.gif); background-position: bottom left;}
+.hugehold {padding: 18px 0px 0px 0px;}
+.bigtabs {margin: 0px;_margin: 0px 0px 0px -1px; padding: 0px; list-style: none; height: 19px;}
+.bigtabs a {display: list-item;}
+.bigtabs li {float: left;}
+.bigopen {width: 95px; height: 17px; background: url(/img/tabs.gif); font: bold 10px Tahoma, arial; color: #333; text-align: center; margin-left: 1px; padding-top: 5px;}
+.big a {width: 95px; height: 19px; background: url(/img/tabs.gif) 0px -44px; font: normal 10px Tahoma; color: #666; text-align: center; margin-left: 5px; padding-top: 3px; text-decoration: none;}
+.big a:hover {width: 95px; height: 19px; background: url(/img/tabs.gif) 0px -22px; font: normal 10px Tahoma; color: #333; text-align: center; margin-left: 5px; padding-top: 3px; text-decoration: none;}
+.inhold {width: 620px; height: 34px; background: #fff; border: 1px #ccc solid; margin-top: 7px;}
+.inholdarea {width: 620px; height: 360px; background: #fff; border: 1px #ccc solid; margin-top: 7px;}
+.inpar {font: bold 12px Tahoma, Arial; color: #666; text-align: left; float: left; width: 200px; padding: 10px 0px 0px 10px;}
+.inp {float: left; width: 410px; padding: 5px 0px 0px 0px;}
+.inptext {float: left; width: 300px; padding: 10px 0px 0px 0px; font: normal 12px tahoma; color: #666;}
+.contentt {padding: 0px 0px 0px 14px;}
+.loginin4 {font: normal 12px  tahoma, arial; color: #333; width: 300px; height: 16px; border: 1px #b7b7b8 solid; padding: 2px 3px 3px 6px; background: url(/img/tbback2.gif);}
+.loginin5 {font: normal 12px  tahoma, arial; color: #333; width: 300px; height: 100px; border: 1px #b7b7b8 solid; padding: 2px 3px 3px 6px; background: #fff;}
+.loginin6 {font: normal 12px  tahoma, arial; color: #333; width: 380px; height: 320px; border: 1px #b7b7b8 solid; padding: 2px 3px 3px 6px; background: #fff;}
+.sbutton {font: normal 14px tahoma, arial; background: #fff; border: 1px #999 solid; padding: 5px 50px 5px 50px;}
+.button2 {font: normal 14px tahoma, arial; background: #fff; border: 1px #999 solid; padding: 5px 20px 5px 20px;}
+.malibut {font: normal 11px tahoma, arial; background: #fff; border: 1px #999 solid; padding: 3px 9px 3px 9px; margin: 0px 0px 0px 4px;}
+.loginshold {margin: auto auto auto auto; width: 800px; padding-top: 110px;}
+.logins {width: 800px; height: 300px; background: url(/img/logback.gif) no-repeat;}
+.obvestillo {width: 800px; height: 300px; background: url(/img/obvback.gif) no-repeat;}
+.loginlevo {float: left; padding: 10px 0px 0px 247px; text-align:  left; font: normal 11px tahoma, arial; color: #ccc;}
+.vecji {font-size: 15px;}
+.najvecji {font-size: 17px;}
+.uporabnisko {width: 185px; height: 26px; font: normal 13px tahoma, arial; color: #666; border: none; background: url(/img/logins.gif); padding: 9px 0px 0px 45px;}
+.geslo {width: 185px; height: 26px; font: normal 13px tahoma, arial; color: #666; border: none; background: url(/img/logins.gif) 0px -37px; padding: 9px 0px 0px 45px; }
+.gege {padding: 11px 0px 0px 18px;}
+.upp {padding: 26px 0px 0px 18px;}
+.nicebut {list-style:  none;}
+.nicebut li {}
+.nicebut a {display: list-item; width: 183px; height: 37px;}
+.niceprijava a { background: url(/img/logins.gif) 0px -80px;}
+.niceprijava a:hover { background: url(/img/logins.gif) 0px -169px;}
+.nicerega a{background:url(/img/logins.gif) 0 -124px;}
+.nicerega a:hover{background:url(/img/logins.gif) 0 -216px;}
+.prijavii{padding:24px 0 0 43px;}
+.regii{padding:15px 0 0;}
+.logindesno{float:left;font:normal 11px tahoma, arial;color:#ccc;text-align:left;padding:95px 0 0 71px;}
+.nazajp{padding:19px 0 0;}
+.avatar{padding:10px 0 0 28px;}
+.ta{color:#999:;padding:0 0 6px;}
+.nava{padding:11px 0 5px 8px;}
+.obvet{width:230px;padding:0 15px 0 17px;}
+.isciboxhold{padding:6px 0 0;}
+.iscibox{width:693px;height:46px;}
+.iscilevo{height:45px;float:left;width:18px;background:url(/img/browz.gif);}
+.iscidesno{height:45px;float:left;width:18px;background:url(/img/browz.gif) 0 -46px;}
+.iscimid{background:url(/img/browz.gif) 0 -93px;width:657px;height:45px;float:left;}
+.niccebut a{display:list-item;width:107px;height:25px;}
+.nicceisci a{background:url(/img/browz.gif) -53px 0;}
+.nicceisci a:hover{background:url(/img/browz.gif) -53px -33px;}
+.isct1{font:normal 12px tahoma, arial;color:#fafafa;float:left;height:30px;width:53px;padding:15px 0 0;}
+.iscinput1{height:25px;float:left;width:140px;background:url(/img/browz.gif) 0 -145px;}
+.iscinput1end{height:25px;width:6px;float:left;background:url(/img/browz.gif) -207px -145px;}
+.iscinputt1{border:none;background:transparent;font:normal 12px tahoma, arial;color:#666;padding:4px 0 0 8px;}
+.isct2{font:normal 12px tahoma, arial;color:#fafafa;float:left;height:30px;width:53px;padding:15px 15px 0;}
+.iscinput2{height:25px;float:left;width:115px;background:url(/img/browz.gif) 0 -145px;}
+.downimage{width:28px;height:24px;background:url(/img/browz.gif) -176px 0;float:left;}
+.iscinputt2{border:none;background:transparent;width:100px;font:normal 12px tahoma, arial;color:#666;padding:4px 0 0 8px;}
+.iscibutt{float:left;padding:11px 0 0 13px;}
+.uui3{float:left;padding:11px 0 0 14px;}
+.iscinput3{height:25px;float:left;width:70px;background:url(/img/browz.gif) 0 -145px;}
+.iscinputt3{border:none;background:transparent;width:57px;font:normal 12px tahoma, arial;color:#666;padding:4px 0 0 8px;}
+.contentt2{text-align:justify;font:normal 11px tahoma, arial;color:#565656;line-height:15px;padding:10px 29px 0 5px;}
+.contentt3{text-align:justify;font:normal 11px tahoma, arial;color:#565656;line-height:15px;margin-right:-5px;padding:10px 29px 0 1px;}
+h2{font:bold 14px tahoma, arial;color:#666;margin:0;padding:0;}
+h1{font:normal 17px tahoma, arial;color:#666;margin:0;padding:10px 0 0 8px;}
+.quote{width:130px;background:url(/img/quoteback.gif);background-position:top;float:left;margin:10px 15px 10px 0;padding:5px 0 0;}
+.quoter{width:130px;background:url(/img/quoteback.gif);background-position:top;float:right;margin:10px 0 10px 15px;padding:5px 0 0;}
+.quote2{width:110px;background:url(/img/quoteback.gif);background-position:bottom;font:bold 12px Tahoma, arial;color:#737373;text-align:left;padding:6px 10px 10px;}
+.tabelca{border-bottom:1px #999 solid;border-right:1px #b6b6b6 solid; color: #666;}
+.jebemo a {color: #666; text-decoration:  underline;}
+.jebemo a:hover {color: #333; text-decoration:  none;}
+.tabelcatd{border-top:1px #999 solid;border-left:1px #b6b6b6 solid;padding:6px 10px;}
+.tabelcatd3{border-top:1px #999 solid;border-left:1px #b6b6b6 solid;padding:6px 10px; background: #727272;}
+.tabelatr1{background:#fff;}
+.tabelatrtop{background:url(/img/browz.gif) 0 -97px;font:bold 11px tahoma, arial;color:#fff;height:23px;}
+.tabelatr2{background:#f4f4f4;}
+.liststarthold{padding:10px 0 0 2px;}
+.listendhold{padding:0 0 15px 2px;}
+.listek{width:690px;height:58px;background:url(/img/brlist.gif) 0 -25px;}
+.listek2{width:690px;height:58px;background:url(/img/brlist.gif) 0 -85px;}
+.list{padding:0 0 0 2px;}
+.likona{width:45px;height:52px;float:left;padding:3px 0 0 3px;}
+.listeklink{float:left;height:48px;width:328px;text-align:left;padding:10px 0 0 13px;}
+.listeklink a{font:bold 12px tahoma, arial;color:#666;text-decoration:none;}
+.listeklink a:hover{font:bold 12px tahoma, arial;color:#787878;text-decoration:none;}
+.liopis{font:normal 9px tahoma, arial;color:#999;padding:3px 0 0;}
+.datat{height:35px;width:60px;float:left;text-align:center;font:bold 11px tahoma, arial;color:#666;padding:23px 0 0;}
+.data3t{height:38px;width:60px;float:left;text-align:center;font:bold 11px tahoma, arial;color:#666;padding:20px 0 0;}
+.liopisl{width:285px;float:left;}
+.liopisr{width:30px;float:left;}
+.ltoolbarholdspodaj{padding:4px 0 0 4px;}
+.ltoolbarholdzgoraj{padding:14px 0 0 4px;}
+.ltoolbar{width:690px;height:30px;}
+.lpages{height:30px;float:left;width:368px;}
+.lpages2{height:30px;float:left;width:600px;}
+.lrazporedi{width:55px;font:normal 12px tahoma, arial;color:#666;float:left;padding:4px 0 0 40px;}
+.lstrani{width:40px;font:normal 12px tahoma, arial;color:#666;float:left;padding:4px 0 0;}
+.lorder{width:180px;height:30px;float:left;}
+.lpage li{float:left;}
+.lpageli a{border:1px #ccc solid;text-align:center;font:bold 11px tahoma, arial;color:#666;text-decoration:none;margin-left:4px;padding:4px 7px;}
+.lpageli a:hover{border:1px #666 solid;text-align:center;font:bold 11px tahoma, arial;color:#333;text-decoration:none;margin-left:4px;padding:4px 7px;}
+.lpageliON{border:1px #666 solid;background:#fafafa;text-align:center;font:bold 11px tahoma, arial;color:#333;text-decoration:none;margin-left:4px;padding:4px 7px;}
+.lback a{text-decoration:none;width:20px;height:20px;background:url(/img/arr.gif) -4px -21px;}
+.lback a:hover{text-decoration:none;width:20px;height:20px;background:url(/img/arr.gif) -6px -21px;}
+.lforward a{text-decoration:none;width:20px;height:20px;background:url(/img/arr.gif) -1px 1px;}
+.lforward a:hover{text-decoration:none;width:20px;height:20px;background:url(/img/arr.gif) 1px 1px;}
+.tripike{font:normal 12px tahoma, arial;padding:8px 10px 0;}
+.lselect{font:normal 11px tahoma, arial;color:#666;border:1px #ccc solid;width:178px;padding:2px 2px 0 5px;}
+.lselect option{padding:3px 0 2px 6px;}
+.lloader{padding:3px 0 0 14px;}
+.nicenazaj a{background:url(/img/nazajna.gif) 0 -1px;}
+.nicenazaj a:hover{background:url(/img/nazajna.gif) 0 -41px;}
+.listinglink img{margin-bottom:-2px;}
+.povleci{width:174px;height:64px;background:url(/img/povleci.gif);}
+.povleci2{width:174px;height:64px;background:url(/img/povleci.gif) 0 -64px;}
+.fupload{position:relative;top:0px;margin-top:-25px;width:400px;text-align:right;-moz-opacity:0;filter:alpha(opacity: 0);opacity:0;}
+#errorExplanation{width:650px;border:2px solid red;margin-bottom:20px;margin-top:20px;margin-left:5px;background-color:#f0f0f0;padding:7px 7px 12px;}
+#errorExplanation h2{text-align:left;font-weight:700;font-size:12px;background-color:#c00;color:#fff;margin:-7px;padding:5px 5px 5px 15px;}
+#errorExplanation p{color:#333;margin-bottom:0;padding:5px;}
+#errorExplanation ul li{font-size:12px;list-style:square;margin-left:20px;}
+#titleholder{border:1px solid #d0d9df;height:20px;background:#FFF url(/images/body-grad.png) left top repeat-x;margin:10px;padding:10px;}
+#errholder{border:1px solid red;height:20px;background:#f0f0f0 url(/images/body-grad.png) left top repeat-x;margin:10px;padding:10px;}
+.h1hold{padding:8px 0 0 1px;}
+.h11{width:678px;height:29px;background:url(/img/h1.gif);font:bold 14px tahoma, arial;color:#666;padding:10px 0 0 13px;}
+.wdata{width:691px;padding:25px 0 16px;}
+.wleft{float:left;width:220px;height:400px;border-right:1px #c3c3c3 solid;}
+.wslika{padding:1px 0 0 13px;}
+.wslika img:hover{border:2px #666 solid;}
+.wslhold{padding:15px 0 0 14px;}
+.wsl{width:182px;height:110px;background:url(/img/sl.gif) no-repeat;}
+.w1{width:691px;height:16px;background:url(/img/w1.gif);}
+.w3{width:661px;background:url(/img/w3.gif);font:normal 11px tahoma;color:#666;padding:0 15px;}
+.w3 img {max-width: 660px;}
+.w2{width:691px;height:16px;background:url(/img/w2.gif);}
+.r1{width:691px;height:12px;background:url(/img/w1.gif);}
+.r3{width:661px;background:url(/img/w3.gif);font:normal 12px tahoma;color:#666;padding:0 15px;}
+.r2{width:691px;height:12px;background:url(/img/w2.gif);background-position:bottom;}
+.wseeds{text-align:center;padding:0 100px 0 0;}
+.wleechs{text-align:center;padding:33px 0 0 76px;}
+.zahvalili{font:normal 14px tahoma, arial;color:#666;padding:6px 0 0 15px;}
+.zahvale{padding:6px 19px 10px 16px;}
+.zahvale a{font:normal 10px tahoma, arial;color:#666: text-decoratio: none;}
+#tlist a{font:normal 10px tahoma, arial;color:#666: text-decoratio: none;}
+.wright{float:left;width:430px;padding:1px 0 0 29px;}
+.q2{background:#f5f5f5 url(/img/bars.gif) -6px -4px repeat-x;width:120px;font:normal 12px tahoma, arial;color:#666;padding:12px 0 12px 10px;}
+.q3{width:290px;font:normal 12px tahoma, arial;color:#666;background:url(/img/bars.gif) -105px -44px;padding:12px 0 12px 10px;}
+.q3 a:hover{text-decoration:none;}
+.newzbot{width:362px;height:25px;padding-top:20px;}
+.poteg{list-style:none;margin:0;padding:10px 0 10px 15px;}
+.potegniga a{width:173px;height:75px;background:url(/img/potegniprasca.gif);}
+.potegniga a:hover{width:173px;height:75px;background:url(/img/potegniprasca.gif) 0 -75px;}
+.answer{font:normal 10px tahoma;color:#666;display:block;margin:6px 0 0 15px;}
+.votestart{height:12px;width:3px;background:url(/img/rezultati.gif);background-position:top left;}
+.voteresult{height:12px;margin-left:15px;background:url(/img/rezultati.gif);background-position:top right;}
+.srednji{font:normal 10px tahoma;color:#727171;padding:5px;}
+#panswers{width:190px;}
+.zhold{width:661px;font:normal 11px tahoma, arial;color:#666;line-height:15px;padding:15px 29px 10px 10px;}
+.zslika{width:92px;height:70px;float:left;padding:0;}
+.spisal{font:normal 12px tahoma, arial;padding:5px 0 0 11px;}
+.komentar{width:691px;padding:13px 0 0;}
+.komentarlevo{width:86px;float:left;height:70px;padding:0 0 0 8px;}
+.avatarframe{width:67px;height:66px;background-position:top center;}
+.komentarstatushold{width:560px;height:25px;background:url(img/kom1.gif);padding:10px 0 0 30px;}
+.komentarcontent{width:540px;background:url(img/kom3.gif);color:#585858;line-height:14px;padding:4px 20px 0 30px;}
+.komentarbot{width:590px;background:url(img/kom2.gif);height:16px;background-position:bottom;}
+.komentardesno{float:left;width:91px;}
+.komentarstatus{width:539px;height:20px;font:normal 12px tahoma, arial;color:#666;border-bottom:1px #999 solid;}
+.odgovorr{font:normal 11px tahoma, arial;color:#666;line-height:15px;padding:16px 20px;}
+.linklist{list-style:none;margin:0;padding:5px 0 0 12px;}
+.linklist img{margin:0 8px -3px 0;}
+.linklistli a{border-bottom:1px #ccc solid;width:165px;height:25px;font:normal 12px tahoma, arial;color:#666;text-decoration:none;padding:6px 0 0 10px;}
+.linklistli a:hover{border-bottom:1px #999 solid;width:165px;background:#fafafa;height:25px;font:normal 12px tahoma, arial;color:#333;text-decoration:none;padding:6px 0 0 10px;}
+.linklistliposta a{border-bottom:1px #ccc solid;width:320px;height:25px;font:normal 12px tahoma, arial;color:#666;text-decoration:none;padding:6px 0 0 10px;}
+.linklistliposta a:hover{border-bottom:1px #999 solid;width:320px;background:#fafafa;height:25px;font:normal 12px tahoma, arial;color:#333;text-decoration:none;padding:6px 0 0 10px;}
+
+.linklistli2 a{border-bottom:1px #ccc solid;width:365px;height:25px;font:normal 12px tahoma, arial;color:#666;text-decoration:none;padding:6px 0 0 10px;}
+.linklistli2 a:hover{border-bottom:1px #999 solid;width:365px;background:#fafafa;height:25px;font:normal 12px tahoma, arial;color:#333;text-decoration:none;padding:6px 0 0 10px;}
+.ogl{padding:15px 0 0 2px;}
+.ogl1{width:198px;height:28px;background:url(/img/ogl1.gif);}
+.ogl3{width:179px;background:url(/img/ogl3.gif);padding:12px 0 0 19px;}
+.ogl2{width:198px;height:28px;background:url(/img/ogl2.gif);}
+.wiki1{width:513px;background:#fff url(/img/wiki1.gif) no-repeat;font:italic 11px tahoma, arial;color:#666;line-height:15px;padding:20px 40px 0 105px;}
+.wiki2{width:653px;height:34px;background:url(/img/wiki2.gif);background-position:bottom;}
+.lista{margin:0;padding:0 0 0 13px;}
+.listali{list-style-type:circle;margin:0;padding:2px 0;}
+#category_dd{margin-left:282px;margin-top:34px;}
+.combo{background-color:#6b7173;color:#fff;border:1px solid #999;font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:11px;font-weight:400;overflow:auto;max-height:250px;min-height:10px;width:138px;margin-top:-1px;display:none;position:absolute;padding:2px;}
+.combo-item{border:1px solid #6f7074;padding:1px 4px;}
+.combo-item:hover{background:#5F6062;color:#fff;border-color:#cfd0d6;}
+.checkbox{width:13px;height:13px;background:url(/images/checkbox.gif) no-repeat left top;float:left;margin-right:5px;}
+.checkbox2{width:13px;height:13px;background:url(/images/checkbox.gif) no-repeat left bottom;float:left;margin-right:5px;}
+.avatar img,.wslika img{border:2px #ccc solid;}
+.niccebut,.lpage{list-style:none;margin:0;}
+.uui,.uui2{float:left;padding:11px 0 0;}
+.quote img,.quoter img{border:1px #ccc solid;}
+.liststart,.listend{width:690px;height:22px;background:url(/img/brlist.gif);}
+.liststart2,.listend2{width:690px;height:22px;background:url(/img/userlist.gif);}
+.lpage a,.poteg a,.linklist a{display:list-item;}
+.wseeds a,.wleechs a{font:bold 15px tahoma, arial;color:#666;text-align:center;}
+.q3 a,.wiki1 a{text-decoration:underline;}
+
+
+
+/* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+*{padding: 0; margin: 0;}
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox specific link and font settings <<<------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_window {
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #cccccc;
+}
+#TB_secondLine {
+  font: 10px Arial, Helvetica, sans-serif;
+  color:#cccccc;
+}
+#TB_window a:link {color: #f4f4f4; text-decoration: underline;}
+#TB_window a:visited {color: #f4f4f4;}
+#TB_window a:hover {color: #ccc; text-decoration:  none;}
+#TB_window a:active {color: #f4f4f4;}
+#TB_window a:focus{color: #f4f4f4;}
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox settings <<<-----------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_overlay {
+  position: fixed;
+  z-index:100;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+.TB_overlayMacFFBGHack {background: url(macFFBgHack.png) repeat;}
+.TB_overlayBG {
+  background-color:#000;
+  filter:alpha(opacity=75);
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+* html #TB_overlay { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+#TB_window {
+  position: fixed;
+  background: #000;
+  z-index: 102;
+  color:#fff;
+  display:none;
+  border: 4px solid #525252;
+  text-align:left;
+  top:50%;
+  left:50%;
+}
+* html #TB_window { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+#TB_window img#TB_Image {
+  display:block;
+  margin: 15px 0 0 15px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
+}
+#TB_caption{
+  height:25px;
+  padding:0px 0px 0px 20px;;
+  float:left;
+}
+#TB_closeWindow{
+  height:25px;
+  padding:11px 25px 10px 0px;
+  float:left;
+}
+#TB_closeAjaxWindow{
+  padding:7px 10px 5px 0;
+  margin-bottom:1px;
+  text-align:right;
+  float:right;
+}
+#TB_ajaxWindowTitle{
+  float:left;
+  padding:7px 0 5px 10px;
+  margin-bottom:1px;
+}
+#TB_title{
+  background-color:#e8e8e8;
+  height:27px;
+}
+#TB_ajaxContent{
+  clear:both;
+  padding:2px 15px 15px 15px;
+  overflow:auto;
+  text-align:left;
+  line-height:1.4em;
+}
+#TB_ajaxContent.TB_modal{
+  padding:15px;
+}
+#TB_ajaxContent p{
+  padding:5px 0px 5px 0px;
+}
+#TB_load{
+  position: fixed;
+  display:none;
+  height:13px;
+  width:208px;
+  z-index:103;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */
+}
+* html #TB_load { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+#TB_HideSelect{
+  z-index:99;
+  position:fixed;
+  top: 0;
+  left: 0;
+  background-color:#fff;
+  border:none;
+  filter:alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  height:100%;
+  width:100%;
+}
+* html #TB_HideSelect { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+#TB_iframeContent{
+  clear:both;
+  border:none;
+  margin-bottom:-1px;
+  margin-top:1px;
+  _margin-bottom:1px;
+}
+
+/* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+.whiterow{width:600px;height:14px;}
+.registrar{width:600px;height:281px;background:#282929;}
+h1{font-size:13px;font-weight:400;margin:0;padding:0;}
+#typebox{width:100%;height:37px;text-align:center;border-top:2px solid #aaa;margin:0;padding:0;}
+BODY.micro #typebox{height:28px;}
+#flash_message,#flash_error{padding:8px;}
+#flash_message{background-color:#cf0;}
+#flash_error{background-color:#f90;}
+#header{background:url(/images/forumhback.gif);height:18px;color:#fff;text-align:left;font-weight:700;font-size:14px;padding:4px 5px;}
+BODY.micro #header{height:18px;}
+#header H1{font-size:18px;margin:7px;}
+BODY.micro #header H1{font-size:12px;margin:2px 5px;}
+#stage{padding:8px 12px;}
+BODY.micro #stage{padding:4px 6px;}
+#conversation{overflow:auto;background-color:#eee;font-size:12px;line-height:22px;width:568px;height:400px;}
+.chat{overflow:auto;background-color:#eee;font-size:12px;line-height:22px;width:568px;height:400px;}
+BODY.micro #conversation{top:20px;font-size:11px;line-height:15px;}
+BODY.micro .chat{top:20px;font-size:11px;line-height:15px;}
+#conversation .message .content{color:#333;}
+.chat .message .content{color:#333; margin-left:10px;}
+#userlist{overflow:auto;width:120px;border-left:2px solid #aaa;background-color:#fff;font-size:14px;height:400px;line-height:22px;float:right;}
+BODY.micro #userlist{top:20px;font-size:11px;line-height:14px;}
+#userlist .user{border-bottom:1px solid #ddd;padding:4px;}
+BODY.micro #userlist .user{padding:2px;}
+#userlist H3{background:top left repeat-x url(/images/grayfade.gif);color:#fff;font-size:12px;font-weight:700;margin:0;padding:3px 3px 3px 6px;}
+BODY.micro #userlist H3{font-size:11px;padding:2px 2px 4px 4px;}
+#entryfield{font-size:14px;margin-left:auto;margin-right:auto;width:99%;margin-top:4px color: #666;}
+#nickname{border:3px solid #666;background-color:#eee;font-size:20px;margin-left:auto;margin-right:auto;width:450px;margin-top:4em;padding:18px;}
+#nickname INPUT{font-size:20px;}
+BODY.micro #nickname{border:1px solid #666;font-size:12px;margin-top:3em;width:250px;padding:6px;}
+.regaena{width:524px;height:119px;background:url(/img/rega1.gif);margin-bottom:-30px;font:normal 21px tahoma;color:#ccc;text-align:left;padding:34px 0 0 260px;}
+.regadva{height:20px;background:url(/img/rega2.gif);background-position:bottom;width:784px;}
+.regatri{width:754px;background:url(/img/rega3.gif);padding:25px 0 0 30px;}
+h1,h2,h3,h4,h5,h6,p,pre,blockquote,label,ul,ol,dl,fieldset,address{margin:1em 0;}
+fieldset{padding:.5em;}
+li{list-style-type:none;margin:0;padding:0;}
+.wrapper{width:100%;border:1px solid #bbb;background:#fff;margin:20px auto;padding:10px;}
+.header{height:200px;background-color:#333;}
+.forum_content{clear:both;}
+.footer{font-size:10px;margin-top:10px;color:#999;padding:0 5px;}
+.forum_content a:link,.forum_content a:visited{color:#676767;text-decoration:none;}
+.forum_content a:active,.forum_content a:hover{color:#000;text-decoration:underline;}
+.forum_content h1{font-family:'Trebuchet MS', Verdana, Sans-Serif;font-size:30px;font-weight:700;letter-spacing:-.3px;margin:0;padding:83px 0 0 40px;}
+.forum_content h1,.forum_content h1 a:link,.forum_content h1 a:visited,.forum_content h1 a:hover,.forum_content h1 a:active{text-decoration:none;color:#fff;}
+.forum_content h1 a:hover,.forum_content h1 a:active{text-decoration:underline;}
+.forum_content h3{font-size:14px;font-weight:400;}
+.tagline{font-family:'Lucida Grande', Verdana, Arial, Sans-Serif;font-size:10px;color:#fff;padding:0 40px;}
+.navii{padding:10px 0 0 10px;}
+.nav{width:690px;margin-bottom:-28px;margin-top:10px;height:26px;border:1px solid #ccc;background:#f1f1f1;}
+.nav-left{float:left;margin:6px 0 0 5px;}
+.nav-right{float:right;margin:6px 5px 0 0;}
+.nav-stats{color:#999;background:#fff;border-left:0;border-right:0;margin-top:0;border-color:#ccc;}
+.nav-stats p.nav-left{margin-left:0;padding-left:5px;}
+.nav-stats p.nav-right{margin-right:0;padding-right:5px;}
+.box{border:1px solid #dedfdf;margin-bottom:10px;background:#f1f1f1;padding:0 10px;}
+.box .top{background:url(/images/forumhback.gif);height:20px;display:block;color:#fff;margin:0 -10px;padding:4px 5px;}
+.box .label{margin-bottom:-10px;}
+thead th{background:#656565 url(/images/forumhback.gif) repeat-x;height:26px;color:#fff;text-align:left;font-weight:400;padding:4px 5px;}
+.forum_content tbody td{vertical-align:top;border-top:1px solid #cedeb9;border-right:1px solid #cedeb9;padding:5px;}
+.forum_content tbody .tci{width:10px!important;border-right:0;}
+.forum_content tbody .tcm{text-align:center;background:#dedfdf;}
+.forums-index .tcm{vertical-align:middle;width:8%;}
+.forum_content tbody .tcr{border-right:0;}
+.forum_content tbody .tds{border:0;padding:10px;}
+.thread .profile{width:24%;}
+.thread .body{width:76%;line-height:1.4em;background:#dedfdf;}
+.thread .body p{margin-top:0;}
+.post-body{overflow:hidden;}
+.post-body img {max-width: 500px;}
+.thread dd.avatar{margin:8px 0 4px;}
+.thread .links{text-align:right;color:#ccc;}
+.forums-index .tcl{width:58%;}
+.forums-index .tcr{width:34%;vertical-align:middle;}
+.forums-list th{background:#f4f3e9;color:#333;}
+.forum-name{font-weight:700;font-size:12px;}
+.topics-index .tcm{width:7%;}
+.topics-index .tcr{width:27%;}
+.topics-index .tcf{width:14%;}
+.info-left{float:left;padding-left:5px;border-left:1px solid #f1f1f1;margin:0 0 10px;}
+.info-right{float:right;padding-right:5px;border-right:1px solid #f1f1f1;margin:1px 0 10px;}
+.detail{color:#999;letter-spacing:-.3px;}
+#filters{text-align:right;margin:2px;padding:4px;}
+blockquote{background:#f1f1f1!important;border:1px solid #f1f1f1;border-color:#ACA899 #FFF #FFF #ACA899;margin:10px!important;padding:6px;}
+cite{font-weight:700;font-style:normal;}
+.sig-hr{margin-top:20px;width:200px;color:#ccc;}
+.edited{margin-top:15px!important;font-style:italic;}
+.profile-avatar{float:right;margin:10px 0;}
+.profile-title{color:#333;font-size:20px;font-weight:700;letter-spacing:-.3px;}
+.profile-info{margin-top:20px;}
+.profile-bio{width:500px;}
+.avatar-list .avatar{float:left;margin:18px;}
+.chk{float:left;margin:0 6px 10px 0;}
+.inline{float:right;width:32%;height:130px;border:1px solid #ccc;}
+.dayName th{background:#d1d1d1;color:#333;width:14%;}
+.otherMonth{color:#ccc;}
+.specialDay p{text-align:left;margin:2px 0;}
+.reminders{background:#35604d;color:#fff;text-align:center;margin-bottom:10px;padding:4px;}
+.wrapper-footer{text-align:center;color:#999;}
+.icon{border-color:#E6E6E6 #DEDEDE #DADADA #E2E2E2;border-style:solid;border-width:6px;margin:0 -3px 0 2px;}
+.inew{border-color:#8BB453 #7A9E48 #709142 #799C47;}
+.pagination{display:inline;}
+#notice,#error{border:1px solid #999;background:#eee;margin-bottom:10px;}
+#notice{background-color:#FBFBB1;text-align:center;padding:5px 0;}
+#errorExplanation{border:1px solid #333;background-color:#f1f1f1;margin-bottom:10px;}
+#errorExplanation h2{border-bottom:1px solid #333;font-size:11px;background-color:#c00;margin:0;padding:4px 5px;}
+#errorExplanation p{display:none;}
+#errorExplanation ul{margin:0;padding:6px 10px;}
+#errorExplanation ul li{padding:2px 0;}
+#typebox FORM,.thread dl{margin:0;}
+#conversation .message .time,#conversation .message.sys .time{color:#aaa;}
+#conversation .message .sender,#conversation .message.action .content{color:#66f;font-weight:700;}
+#conversation .message.sys .sender,#conversation .message.sys .content{color:#5b0;font-weight:700;}
+.chat .message .time, .chat .message.sys .time{color:#aaa;margin-left:5px;margin-right:5px; }
+.chat .message .sender,.chat .message.action .content{color:#66f;font-weight:700;}
+.chat .message.sys .sender,.chat .message.sys .content{color:#5b0;font-weight:700;}
+BODY.micro #entryfield,BODY.micro #nickname INPUT{font-size:12px;}
+a img,.thread td{border:0;}
+.nav-footer,.box .small{margin:0 0 10px;}
+.box label,.thread dd.rank{font-weight:700;}
+.forum_content thead th a:link,.forum_content thead th a:visited,.reminders a{color:#fff;}
+.forum_content thead .tcm,.avatar-list,.avatar-show{text-align:center;}
+.forum_content tbody,.login{background:#f1f1f1;}
+.thread,.forums-index{margin-bottom:5px;}
+.thread dt,.title{font-size:12px;font-weight:700;letter-spacing:-.3px;}
+.thread .thr,.day,.otherMonth,.specialDay{text-align:right;}
+.disabled,.profile-rank{color:#999;}
+.skrinshold {padding: 0px 0px 0px 10px;}
+.skrins {bacgkround: #ccc; width: 200px;}
+
+.ulistek{width:690px;height:43px;background:url(/img/ul.gif);}
+.ulistek2{width:690px;height:43px;background:url(/img/ul.gif) 0 -43px;}
+
+.ulslika {float: left; width: 35px; height: 28px; padding: 13px 0px 0px 15px;}
+.ulusername {height: 26px; padding: 12px 0px 0px 0px; float: left; width: 268px;}
+.ulusername a {font: normal 14px tahoma, arial; color: #666; text-decoration: none;}
+.ulusername a:hover {font: normal 14px tahoma, arial, color: #333; text-decoration: underline;}
+.ull {float: left; text-align:  center; width: 124px; font: bold 11px tahoma; padding: 15px 0px 0px 0px; height: 28px; color: #666;}
+
+
+.chtopic {width: 487px; height: 23px; border-bottom: 1px #ccc solid; font: normal 12px tahoma, arial; colr: #666; }
+
+.chpost {width: 495px;}
+.cerror {width: 447px; border:1px solid red; text-align:center; padding:3px;}
+.chpostl {width: 80px; height: 20px; font: bold 11px tahoma, arial; color: #666; text-align:  right; float: left; padding-top: 1px;}
+.chpostl span {font: normal 9px tahoma; color: #999;}
+
+.chpostr {width: 370px; float: left; padding: 0px 0px 0px 8px;}
+
+.chtop {width: 345px; background: url(/img/chja.gif); padding: 5px 10px 0px 20px; font: normal 11px tahoma,arial; color: #666;}
+.chbot {width: 375px; height: 8px; background: url(/img/chne.gif); }
+.chtop img {margin-bottom: -4px;}
+.chposts {padding: 10px 0px 0px 0px; overflow:auto;}
+
+.chpostin {width: 484px; padding: 21px 0px 0px 0px; height: 25px;}
+.chpostlusr {width: 96px; height: 25px; font: bold 11px tahoma, arial; color: #333; text-align:  right; float: left; padding-top: 1px;}
+.chpostinr {height: 25px; width: 350px; background:  url(/img/ch_4.gif) no-repeat: float: left;}
+
+
+.chuserstop {width: 142px; height: 16px; background:  url(/img/ch_1.gif);}
+.chusers {width: 142px; height: 400px; background:  url(/img/ch_2.gif); overflow: auto;}
+.chusersbot {width: 142px; height: 16px; background:  url(/img/ch_3.gif);}
+.chusersul {margin: 0px; padding: 0px 0px 0px 14px;; }
+.chusersul a {width: 140px; display: list-item;}
+.chpostusr {width: 484px; padding: 26px 0px 0px 0px; }
+
+.chuser a { width: 100px; text-decoration:  none; font: normal 11px tahoma, arial; color: #666; border-bottom: 1px #b9b9b9 solid; padding: 5px 0px 5px 0px;}
+.chuser a:hover { width: 100px; text-decoration:  none; font: normal 11px tahoma, arial; color: #333; border-bottom: 1px #999 solid; padding: 5px 0px 5px 0px;}
+.chuser img {margin: 0px 5px -2px 0px;}
+
+.chpostinr2 {height: 25px; width: 400px; background: url(/img/ch_4.gif) 0px 6px no-repeat; float: left; padding-top: 6px;}
+.chpostl2 {width: 69px; height: 20px; font: bold 11px tahoma, arial; color: #333; text-align:  right; float: left; padding-top: 6px; padding-right: 13px;}
+
+
+.tj {float: left; width: 333px; padding: 5px 0px 0px 12px;}
+.tjload {width: 20px; float: left; padding: 4px 10px 0px 0px;}
+.tjok {float: left; width: 25px;}
+
+.tjinput {border: none; font: normal 12px tahoma, arial; color: #333; width: 320px; background:  transparent; padding: 0px 0px 0px 3px;}
+
+.cf_1 {width: 923px; height: 10px; background:  url(/img/cf_1.gif);}
+.cf_2 {width: 923px; background: url(/img/cf_2.gif) repeat-y; padding: 0px 0px 20px 0px; height: 400px;}
+.cf_3 {background:  url(/img/cf_3.gif) -2px 0px no-repeat; width: 923px; height: 120px;}
+
+
+
+.listeknovo{width:690px;height:58px;background:url(/img/novo.gif) 0 -25px;}
+.listek2novo{width:690px;height:58px;background:url(/img/novo.gif) 0 -85px;}
+
+
+.cftabs {margin: 0px; padding: 7px 0px 0px 406px; }
+.cftabs li {float: left;}
+.cftabs a {display: list-item; }
+
+.cf1 a {width: 95px; height: 17px; background: url(/img/cftabs.gif) no-repeat; font: normal 10px tahoma, arial; color: #6a6a6a; text-decoration:  none; padding: 5px 0px 0px 38px;}
+.cf1 a:hover {width: 95px; height: 17px; background: url(/img/cftabs.gif) 0px -24px no-repeat; font: normal 10px tahoma, arial; color: #333; text-decoration:  none; padding: 5px 0px 0px 38px;}
+.cf1open {width: 95px; height: 17px; background: url(/img/cftabs.gif) 0px -24px  no-repeat; font: normal 10px tahoma, arial; color: #6a6a6a; text-decoration:  none; padding: 5px 0px 0px 38px;}
+
+.cf2open {width: 72px; height: 16px;padding: 6px 0px 0px 48px;background: url(/img/cftabs.gif) 0px -50px; font: normal 10px tahoma, arial; color: #6a6a6a; }
+
+.cf2 a {width: 72px; height: 16px;padding: 6px 0px 0px 48px;background: url(/img/cftabs.gif) 0px -75px; font: normal 10px tahoma, arial; color: #6a6a6a; text-decoration: none;}
+.cf2 a:hover {width: 72px; height: 16px;padding: 6px 0px 0px 48px;background: url(/img/cftabs.gif) 0px -50px; font: normal 10px tahoma, arial; color: #6a6a6a; text-decoration: none;}
+
+
+.cfspod {width: 870px; padding: 10px 20px 0px 20px;}
+.cfspodl {float: left; width: 660px; height: 90px; }
+.cfspodr {width: 150px; height: 90px; float: left;}
+
+.cftit {padding: 5px 0px 0px 10px;}
+.cftit a {width: 660px; font: normal 18px tahoma, arial; color: #d9d9d9; text-decoration:  none;}
+
+.cftit a:hover {width: 660px; font: normal 18px tahoma, arial; color: #fff; text-decoration: underline;}
+
+.cfinfo {width: 660px; padding: 14px 0px 0px 10px;}
+.cfseeds {width: 80px; font: normal 10px tahoma, arial; color: #d9d9d9; float: left; text-align:  left; padding: 0px 10px 0px 2px;}
+.cfleechers {font: normal 10px tahoma, arial; color: #d9d9d9; float: left; text-align: left; padding: 0px 0px 0px 5px;}
+
+.cfseeds b {margin-left: 17px;}
+.cfleechers b {margin-left: 12px;}
+
+.cfpotegni {width: 150px; }
+
+
+
+.livesearch {width: 227px; position: absolute; z-index: 23; margin-left: -11px; color: #ccc;}
+.livesearch a {color: #fff;}
+.livesearchtop {width: 227px; background: url(/img/sb.png); color: #fff;}
+.livesearchbot {width: 227px; background:  url(/img/sb.png) -233px 0px; height: 47px;}
+
+
+
+
+.listingbhold {padding: 0px 0px 0px 12px; font: normal 11px tahoma, arial;}
+.listingbx {padding: 7px 9px 0px 7px; width: 170px; height: 39px; border-bottom: 1px #999 solid;}
+.listingbxh {padding: 7px 9px 0px 7px; width: 170px; height: 39px; border-bottom: 1px #ccc solid; background:  #4b4b4b;}
+.krava {width: 125px; float: left; padding: 1px 0px 0px 5px; text-align:  left; font: normal 11px tahoma, arial; color: #ccc;}
+.krava a {font: normal 11px tahoma, arial; color: #ccc; text-decoration: none;}
+.krava a:hover {font: normal 11px tahoma, arial; color: #fff; text-decoration: none;}
+.listingbimg {width: 40px; float: left; }
+.listingbz {padding: 23px 0px 0px 8px;}
+
+.latbimg {width: 34px; height: 31px; background: url(/img/pback.gif);}
+
+.novospo {float: left; padding: 4px 0px 0px 540px;}
+.novospodva {float: left; padding: 4px 0px 0px 410px;}
+.novospodva a {font: normal 12px tahoma, arial; color: #666; text-decoration:  none;}
+.novospodva a:hover {font: normal 12px tahoma, arial; color: #333; text-decoration:  none;}
+.novospodva img {margin: 0px 8px -3px 0px;}
+
+.novospo a {font: normal 12px tahoma, arial; color: #666; text-decoration:  none;}
+.novospo a:hover {font: normal 12px tahoma, arial; color: #333; text-decoration:  none;}
+.novospo img {margin: 0px 8px -3px 0px;}
+
+
+.posta1 {width: 528px; height: 32px; background:  url(/img/posta1.gif);}
+.posta2 {width: 498px; background:  url(/img/posta2.gif) repeat-y; padding: 0px 15px 0px 15px;}
+.posta3 {width: 528px; height: 32px; background:  url(/img/posta3.gif);}
+
+.posst {width: 130px; height: 30px; font: normal 12px tahoma, arial; color: #333; background: #e0dede; padding: 0px 0px 0px 15px; border-bottom: 1px #ccc solid;}
+
+.posst2 {width: 300px; height: 30px; font: normal 12px tahoma, arial; color: #666; padding: 0px 0px 0px 15px;border-bottom: 1px #ccc solid;}
+.postamsg {font: normal 12px tahoma, arial; color: #666; line-height:  17px; padding: 17px 15px 6px 13px; text-align: justify;}
+
+
+
+.sound {text-align:  center; padding: 12px 2px 10px 0px;}
+.sound a {text-decoration: none; font: normal 12px tahoma, arial; color: #333;}
+.sound a:hover {text-decoration: none; font: bold 12px tahoma, arial; color: #000;}
+
+
+.que {padding: 2px 0px 0px 5px;}
+.que td {padding: 2px 4px 2px 3px; font: normal 11px tahoma, arial; color: #666;}
+
+.promo {padding: 6px 0px 0px 2px;}
+
+.barva {margin: 7px 0px 0px 0px; padding: 0px; list-style: none;}
+.barva li { float: left;}
+.barva a {width: 29px; height: 25px; display: list-item; margin: 3px 0px 0px 5px;}
+
+.barvali a {background: url(/img/_color.gif);  }
+.barvali a:hover {background: url(/img/_color.gif) 0px -25px; }
+.barvalisel a {background: url(/img/_color.gif) 0px -50px; }
+
+.ops {margin: -6px 0px 0px 0px; padding: 0px; list-style:  none;}
+.ops li {}
+.ops a {display: list-item;}
+
+.opsli a {width: 94px; height: 23px; background: url(/img/ops.gif) 0px -46px;}
+.opsli a:hover {width: 94px; height: 23px; background: url(/img/ops.gif) 0px -69px;}
+.opsli2 a {width: 114px; height: 23px; background: url(/img/ops.gif); }
+.opsli2 a:hover {width: 114px; height: 23px; background: url(/img/ops.gif) 0px -23px; }
+
+
+.widget {width: 232px; height: 66px; background: url(/img/widget.gif); float: left; margin-left: 8px;}
+.widgets {height: 66px; width: 483px;background: url(/img/wbg.gif); margin: -4px 0px 0px -10px;}
+
+.newhold {float: left; height: 60px; width: 106px; padding: 15px 0px 0px 9px;}
+.slikaz {width: 44px; height: 41px; float: left;}
+.naslovz {width: 59px; height: 58px; font: normal 9px tahoma, arial; float: left; text-align:  left; padding: 0px 0px 0px 2px;}
+.naslovz a {color: #ccc; text-decoration: none;}
+.naslovz a:hover {color: #fff; text-decoration: none;}
+
+.nghold {padding: 10px 0px 0px 9px;}
+.ng1 {width: 63px; height: 45px; background: url(/img/ng.gif); float: left;}
+.nginputs {width: 160px;  float: left; height: 50px; }
+
+.nginput {width: 102px; height: 17px; border: 0px; background: url(/img/ngin.gif); font: normal 11px tahoma, arial; color: #ccc; padding: 2px 0px 0px 7px;}
+.ngimage {margin: 0px 0px -6px 0px;}
+.ngi1 {padding: 2px 0px 3px 0px;}
+
+
+.vremko {font: normal 9px tahoma, arial; color: #ccc; text-align: center;}
+.dan {width: 70px; height: 50px; float: left; padding: 4px 0px 0px 6px;}
+
+.kosarica {width: 176px; height: 209px; background: url(/img/kosarica2.gif); overflow: auto;}
+.shitem {font: normal 12px tahoma, arial; color: #333; padding: 4px 10px 5px 10px; border-bottom: 1px #ccc solid; line-height: 16px; }
+.loot {width: 176px; height: 209px;}
+
+.artikel {float: left;width: 193px; background: url(/img/pshad.gif) no-repeat; background-position: bottom right; padding: 26px 10px 0px 25px;}
+.artikeltit {font: normal 14px tahoma; color: #333;padding: 10px 0px 3px 0px;}
+.artikeltit a {font: normal 14px tahoma; color: #333; text-decoration: none; }
+.artikeltit a:hover {font: normal 14px tahoma; color: #666; text-decoration: underline; }
+.artikelzaloga {font: normal 9px tahoma, arial; color: #999;}
+.artikelcena {width: 184px; text-align:  right; font: bold 13px tahoma, arial; color: #770000; padding: 0px 10px 0px 0px;}
+
+
+.zgodovinahold {padding: 6px 0px 5px 12px;}
+.zgodovina {list-style: none; width: 180px; margin: 0px; padding: 0px;}
+.zgodovinaw {list-style: none; width: 580px; margin: 0px; padding: 0px;}
+.zgodovina li {width: 140px; padding: 6px 9px 6px 30px; font: normal 10px tahoma, arial; text-align: left;}
+.zgodovinaw li {width: 540px; padding: 6px 9px 6px 30px; font: normal 10px tahoma, arial; text-align: left;}
+.oranzen {background: #fee8b7 url(/img/icons/exclamation.png) 6px 10px no-repeat; color: #4d350e; border-top: 1px #be860e solid;border-bottom: 1px #be860e solid; }
+.moder {background: #b5ecf1 url(/img/icons/coins.png) 6px 10px no-repeat; color: #114b51; border-top: 1px #47e0ef solid;border-bottom: 1px #47e0ef solid; }
+.rdec {background: #ffadad url(/img/icons/door_out.png) 6px 10px no-repeat; color: #570f0f; border-top: 1px #f95757 solid;border-bottom: 1px #f95757 solid; }
+.whatsnewhold {padding: 7px 0px 5px 14px; }
+.whatsnew {width: 275px; height: 29px; background: url(/img/novos.gif); padding: 12px 0px 0px 84px;}
+.whatsnew a {font: normal 12px tahoma, arial; color: #666; text-decoration:  none;}
+.whatsnew a:hover {font: normal 12px tahoma, arial; color: #333; text-decoration:  underline;}
+
+.ocenabg {height:16px; width:90px; background: url(/images/zvezdice.gif) 0px -16px; float:left; margin:-3px 0px 0px 10px; _margin:0px 0px 0px 10px;}
+.ocena {height:16px; background: url(/images/zvezdice.gif);}
+
+.jokebg {height:16px; width:88px; background: url(/img/smeski.gif) 0px -16px; float:left; margin:-3px 0px 0px 10px; _margin:0px 0px 0px 10px;}
+.joke {height:16px; background: url(/img/smeski.gif);}
+
+
+
+.bargraph {
+	font: 9px Arial;
+	color: #000;
+	border-collapse: collapse;
+	width: 476px;
+	margin: 10px 0px 0px 10px;
+}
+.bargraph td {
+	padding:0;
+	margin:0;
+	vertical-align:bottom;
+	text-align:center;
+	background: #fafafa url(/img/gridline.gif) 15px bottom;
+}
+.bargraph th {
+	background: #ccc;
+	padding: 2px 5px 2px 5px;
+}
+.bargraph img{
+	display:block;
+	border-right: 1px solid #000;
+}
+.stath {font: bold 16px tahoma; padding: 20px 0px 20px 0px;}
+.piena {width; 711px; height: 16px; background: url(/img/pi1.gif) no-repeat;}
+.pidva {width; 701px;  background: url(/img/pi2.gif) repeat-y; padding: 0px 5px 0px 5px;}
+.pitri {width; 711px; height: 16px; background: url(/img/pi3.gif) no-repeat;}
+
+.utophold {padding-top: 10px;}
+
+
+.shy {width: 945px; height: 125px; margin: 0px 0px 0px -10px; }
+.shyin {width: 915px; height: 95px; background: url(/img/shy.png); padding: 30px 0px 0px 30px;}
+
+.shyleft {width:700px; float:left; font: normal 24px tahoma, arial; color: #413e30;}
+.shyleft b {font: normal 18px tahoma, arial; color: #b4b3a8;}
+
+.shydata {font: normal 12px tahoma, arial; padding: 5px 0px 0px 15px;}
+.shydata img {margin-right: 6px;}
+.shydata a {font: normal 12px tahoma, arial; text-decoration: underline;}
+.shydata a:hover {font: normal 12px tahoma, arial;text-decoration: none;}
+.shyright {float: right;padding: 0px 30px 0px 0px; margin-top: -25px;}
+.shyrighthold {width: 118px; height: 118px; border: 2px #d1d1d1 solid; }
+.utable {padding: 0px 0px 0px 20px;}
+
+.zoglas {width: 689px; height: 38px; font: normal 11px tahoma; color: #333;}
+.zblok { height: 38px; width: 88px; padding-left: 10px;background: url(/img/zoglas.gif) no-repeat;}
+.z2blokdva { height: 38px; width: 278px; background: url(/img/zoglas.gif) -98px 0px no-repeat; }
+.z3bloktri { height: 38px; width: 158px; background: url(/img/zoglas.gif) -376px 0px no-repeat;  }
+.z4blokstir { height: 38px; width: 180px; background: url(/img/zoglas.gif) -536px 0px no-repeat;  }
+
+
+.nowpromo {width: 362px; height: 42px; background: url(/img/nowpeomo.gif) 0px -1px no-repeat; margin-top: 4px;}
+.none {display:none;}
+.newrow {}
+.newrowleft {float: left;}
+.newrowright {float: right; padding-right: 23px;}
+.bigban {padding: 12px 0px 0px 36px;}
+.newrowul {margin: 0px; padding: 0px; font-family: tahoma, arial; font-size: 11px;}
+.newrowul a {color: #666; display: list-item; height: 25px; background: url(/img/bagg.gif) 0px -36px; padding: 10px 10px 0px 10px;}
+.newrowul a:hover {color: #333; display: list-item; text-decoration: none;  background: url(/img/bagg.gif) 0px 0px; }
+.newrowul li {float: left;}
+.newrow {width: 964px; height: 45px; background: url(/img/newrow.gif) no-repeat;}
+.pozli {height: 36px; color: #666; padding: 9px 20px 0px 20px; width: 443px;}
+.newimgg {margin-bottom: -3px; margin-right: 7px;}
+.newimggalone {margin-bottom: -3px; margin-right: 7px;}
+.frendbox {width: 441px; height: 251px; background: url(/img/frendz.gif);}
+
+.utabletwo {padding: 0px 0px 0px 15px;}
+.listenonline {width: 196px; height: 22px; background: url(/img/listenonline.gif) 2px 0px no-repeat;}
+
+
