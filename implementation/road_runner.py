@@ -58,11 +58,50 @@ class MatchingMethods:
                 if end_mis == s_list[count]:
                     return Mismatch(string="( "+ optional +" )?", counter=counter)
 
-    def find_square(self, w_list, s_list):
-        ul_w = [i for i, x in enumerate(w_list) if x == "<ul>"]
-        ul_s = [i for i, x in enumerate(s_list) if x == "</ul>"]
-        ul_end_w = [i for i, x in enumerate(w_list) if x == "<ul>"]
-        ul_end_s = [i for i, x in enumerate(s_list) if x == "</ul>"]
+    def get_possbile_square_location(self, count, in_list):
+        for i in range(count, len(in_list)):
+            if in_list[i] == "</li>":
+                return count, i
+            if in_list[i] == "</ul>":
+                return None
+
+    def try_square_matching(self, square, in_list):
+        square = []
+        start = square[0]
+        finish = square[1]
+        diff = finish - start
+        for i in range(start, finish):
+            if "<" not in in_list[i] and "<" not in in_list[i-diff]:
+                if in_list[i] == in_list[i-diff]:
+                    square.append(in_list[i])
+                else:
+                    square.append("#PCDATA")
+                continue
+            if in_list[i] != in_list[i-diff]:
+                return False
+            else:
+                square.append(in_list[i])
+        return True, square
+
+    def fix_wrapper(self, square):
+        for i in range(len(generated_wrapper), 0, -1):
+            if "<ul>" == generated_wrapper[i]:
+                del generated_wrapper[-1]
+        generated_wrapper.append("( "+square+" )+")
+
+
+    def find_ul_square(self, count, in_list):
+        ul_start = 0
+        ul_finish = 0
+        for i in range(count, 0, -1):
+            if "<ul>" == in_list[i]
+                ul_start = i
+                break
+        for i in range(count, len(in_list)):
+            if "</ul>" == in_list[i]:
+                ul_finish = i
+                break
+        return ul_start, ul_finish
 
 
 
@@ -106,10 +145,15 @@ wrapper_count = 0
 sample_count = 0
 generated_wrapper = []
 matching = MatchingMethods()
+possible_square = False
 
 for i in range(max(len(sample), len(wrapper))):
     sample_ele = sample[sample_count]
     wrapper_ele = wrapper[wrapper_count]
+    if "ul" in sample_ele or "ul" in wrapper_ele:
+        possible_square = True
+    elif "/ul" in sample_ele or "/ul" in wrapper_ele:
+            possible_square = False
     if sample_ele == wrapper_ele:
         generated_wrapper.append(sample_ele)
         wrapper_count += 1
@@ -122,7 +166,31 @@ for i in range(max(len(sample), len(wrapper))):
             sample_count += 1
             continue
         else:       #tag mismatch
-            mismatch = MatchingMethods.get_tag_mismatch(MatchingMethods, sample_count, sample)
-            sample_count += mismatch.counter
-            generated_wrapper.append(mismatch.string)
+            if possible_square:
+                s_square = MatchingMethods.get_possbile_square_location(sample_count, sample)
+                w_square = MatchingMethods.get_possbile_square_location(wrapper_count, wrapper)
+                if s_square != None:
+                    square = MatchingMethods.try_square_matching(s_square, sample)
+                    if not square[0]:
+                        continue
+                    ul_s_st_fin = MatchingMethods.find_ul_square(sample_count, sample)
+                    ul_wr_st_fin = MatchingMethods.find_ul_square(wrapper_count, wrapper)
+                    MatchingMethods.fix_wrapper(square[1])
+                    sample_count = ul_s_st_fin[1]
+                    wrapper_count = ul_wr_st_fin[1]
+                    continue
+                if w_square != None and MatchingMethods.try_square_matching(w_square, wrapper):
+                    square = MatchingMethods.try_square_matching(s_square, sample)
+                    if not square[0]:
+                        continue
+                    ul_s_st_fin = MatchingMethods.find_ul_square(sample_count, sample)
+                    ul_wr_st_fin = MatchingMethods.find_ul_square(wrapper_count, wrapper)
+                    MatchingMethods.fix_wrapper(square[1])
+                    sample_count = ul_s_st_fin[1]
+                    wrapper_count = ul_wr_st_fin[1]
+                    continue
+            else:
+                mismatch = MatchingMethods.get_tag_mismatch(MatchingMethods, sample_count, sample)
+                sample_count += mismatch.counter
+                generated_wrapper.append(mismatch.string)
 print(generated_wrapper)
