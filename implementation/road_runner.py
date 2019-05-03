@@ -13,7 +13,7 @@ class MyHTMLParser1(HTMLParser):
         #print("Encountered a start tag: <"+ tag+ ">")
 
     def handle_endtag(self, tag):
-        wrapper.append("<" + tag + "/>")
+        wrapper.append("</" + tag + ">")
         #print("Encountered an end tag : </"+ tag+ ">")
 
     def handle_data(self, data):
@@ -30,7 +30,7 @@ class MyHTMLParser2(HTMLParser):
         #print("Encountered a start tag: <"+ tag+ ">")
 
     def handle_endtag(self, tag):
-        sample.append("<" + tag + "/>")
+        sample.append("</" + tag + ">")
         #print("Encountered an end tag : </"+ tag+ ">")
 
     def handle_data(self, data):
@@ -59,18 +59,23 @@ class MatchingMethods:
                     return Mismatch(string="( "+ optional +" )?", counter=counter)
 
     def get_possbile_square_location(self, count, in_list):
+        start = 0
+        for i in range(count, 0, -1):
+            if "<li" in in_list[i]:
+                start = i
+                break
         for i in range(count, len(in_list)):
             if in_list[i] == "</li>":
-                return count, i
+                return start, i
             if in_list[i] == "</ul>":
                 return None
 
-    def try_square_matching(self, square, in_list):
+    def try_square_matching(self, pot_square, in_list):
         square = []
-        start = square[0]
-        finish = square[1]
-        diff = finish - start
-        for i in range(start, finish):
+        start = pot_square[0]
+        finish = pot_square[1]
+        diff = (finish - start) + 1
+        for i in range(finish, start -1, -1):
             if "<" not in in_list[i] and "<" not in in_list[i-diff]:
                 if in_list[i] == in_list[i-diff]:
                     square.append(in_list[i])
@@ -81,12 +86,15 @@ class MatchingMethods:
                 return False
             else:
                 square.append(in_list[i])
-        return True, square
+        square.reverse()
+        return True, "".join(square)
 
     def fix_wrapper(self, square):
-        for i in range(len(generated_wrapper), 0, -1):
-            if "<ul>" == generated_wrapper[i]:
+        for i in range(len(generated_wrapper)-1, 0, -1):
+            if "<ul>" != generated_wrapper[i]:
                 del generated_wrapper[-1]
+            else:
+                break
         generated_wrapper.append("( "+square+" )+")
 
 
@@ -94,7 +102,7 @@ class MatchingMethods:
         ul_start = 0
         ul_finish = 0
         for i in range(count, 0, -1):
-            if "<ul>" == in_list[i]
+            if "<ul>" == in_list[i]:
                 ul_start = i
                 break
         for i in range(count, len(in_list)):
@@ -121,7 +129,7 @@ wrapper = []  # Page 1 = initial wrapper
 parser = MyHTMLParser1()
 parser.feed(result.decode("utf-8").replace('\n', '').replace('\t', '').replace('\r', ''))
 
-print(wrapper)
+#print(wrapper)
 
 # --------------------------------------
 # Read second page
@@ -136,7 +144,7 @@ sample = []
 parser = MyHTMLParser2()
 parser.feed(result.decode("utf-8").replace('\n', '').replace('\t', '').replace('\r', ''))
 
-print(sample)
+#print(sample)
 #-------------------------------------------
 
 # TODO: generate wrapper
@@ -145,15 +153,22 @@ wrapper_count = 0
 sample_count = 0
 generated_wrapper = []
 matching = MatchingMethods()
-possible_square = False
+w_possible_square = False
+s_possible_square = False
 
-for i in range(max(len(sample), len(wrapper))):
+while True:
+    if sample_count==len(sample) or wrapper_count==len(wrapper):
+        break
     sample_ele = sample[sample_count]
     wrapper_ele = wrapper[wrapper_count]
-    if "ul" in sample_ele or "ul" in wrapper_ele:
-        possible_square = True
-    elif "/ul" in sample_ele or "/ul" in wrapper_ele:
-            possible_square = False
+    if "<ul" in sample_ele:
+        s_possible_square = True
+    if "<ul" in wrapper_ele:
+        w_possible_square = True
+    if "</ul>" in sample_ele:
+        s_possible_square = False
+    if "</ul>" in wrapper_ele:
+        w_possible_square = False
     if sample_ele == wrapper_ele:
         generated_wrapper.append(sample_ele)
         wrapper_count += 1
@@ -166,20 +181,20 @@ for i in range(max(len(sample), len(wrapper))):
             sample_count += 1
             continue
         else:       #tag mismatch
-            if possible_square:
-                s_square = MatchingMethods.get_possbile_square_location(sample_count, sample)
-                w_square = MatchingMethods.get_possbile_square_location(wrapper_count, wrapper)
+            if w_possible_square or s_possible_square:
+                s_square = MatchingMethods.get_possbile_square_location(MatchingMethods, sample_count, sample)
+                w_square = MatchingMethods.get_possbile_square_location(MatchingMethods, wrapper_count, wrapper)
                 if s_square != None:
-                    square = MatchingMethods.try_square_matching(s_square, sample)
+                    square = MatchingMethods.try_square_matching(MatchingMethods,s_square, sample)
                     if not square[0]:
                         continue
-                    ul_s_st_fin = MatchingMethods.find_ul_square(sample_count, sample)
-                    ul_wr_st_fin = MatchingMethods.find_ul_square(wrapper_count, wrapper)
-                    MatchingMethods.fix_wrapper(square[1])
+                    ul_s_st_fin = MatchingMethods.find_ul_square(MatchingMethods, sample_count, sample)
+                    ul_wr_st_fin = MatchingMethods.find_ul_square(MatchingMethods, wrapper_count, wrapper)
+                    MatchingMethods.fix_wrapper(MatchingMethods, square[1])
                     sample_count = ul_s_st_fin[1]
                     wrapper_count = ul_wr_st_fin[1]
                     continue
-                if w_square != None and MatchingMethods.try_square_matching(w_square, wrapper):
+                if w_square != None:
                     square = MatchingMethods.try_square_matching(s_square, sample)
                     if not square[0]:
                         continue
