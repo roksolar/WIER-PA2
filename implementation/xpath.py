@@ -173,8 +173,12 @@ overstock_file_2 = '../input/overstock.com/jewelry02.html'
 pageContent1 = open(overstock_file_1, 'r').read()
 pageContent2 = open(overstock_file_2, 'r').read()
 
-#overstock(pageContent1)
-#overstock(pageContent2)
+print("JEWELRY 1")
+overstock(pageContent1)
+print("--------------------------------------------------------------")
+print("JEWELRY 2")
+overstock(pageContent2)
+print("--------------------------------------------------------------")
 
 rtvslo_file_1 = '../input/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html'
 rtvslo_file_2 = '../input/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html'
@@ -182,8 +186,12 @@ rtvslo_file_2 = '../input/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med na
 pageContent1 = open(rtvslo_file_1, 'r', encoding='utf-8').read()
 pageContent2 = open(rtvslo_file_2, 'r', encoding='utf-8').read()
 
-#rtvslo(pageContent1)
-#rtvslo(pageContent2)
+print("RTVSLO 1: Audi A6 50 TDI quattro_ nemir v premijskem razredu")
+rtvslo(pageContent1)
+print("--------------------------------------------------------------")
+print("RTVSLO 2: Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si")
+rtvslo(pageContent2)
+print("--------------------------------------------------------------")
 
 partis_file_1 = '../input/partis.si/Partis.si.html'
 partis_file_2 = '../input/partis.si/Partis2.si.html'
@@ -191,5 +199,9 @@ partis_file_2 = '../input/partis.si/Partis2.si.html'
 pageContent1 = open(partis_file_1, 'r', encoding='utf-8').read()
 pageContent2 = open(partis_file_2, 'r', encoding='utf-8').read()
 
-#partis(pageContent1)
-#partis(pageContent2)
+print("PARTIS 1")
+partis(pageContent1)
+print("--------------------------------------------------------------")
+print("PARTIS 2")
+partis(pageContent2)
+print("--------------------------------------------------------------")
