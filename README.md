@@ -1,6 +1,6 @@
 # WIER-PA2
 Asignment for Web information extraction and retrieval course of University of Ljubljana, Faculty of Computer and Information Science. 
-Implemented approaches to extraction of data are in implemented directory.
+Implemented approaches for extraction of data are in directory implemented.
 
 Requiered python libraries: html, re, json, BeautifulSoup,lxml, html.parser
 
@@ -12,4 +12,5 @@ python xpath.py.
 Application runs out of the box, so dont move tests or scripts. Scripts prints out extracted data in json format.
 
 TEST ROADRUNNER
- 
+In the file road_runner.py in line 7 and 8 you should change files parameters.
+Then just run python road_runner.py in cmd. 
