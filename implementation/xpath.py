@@ -5,16 +5,15 @@ import json
 from bs4 import BeautifulSoup
 
 
-def rtvslo(file):
+def rtvslo(pageContent):
     # We rather use the locally-cached file as it may have changed online.
-    pageContent = open(file, 'r').read()
     #print("Page content:\n'%s'." % pageContent)
 
     dataItem = {
             "Title": "",
             "Subtitle": "",
             "Author": "",
-            "Time": "",
+            "PublishedTime": "",
             "Lead": "",
             "Content": ""
         }
@@ -22,28 +21,27 @@ def rtvslo(file):
     # Form an XML tree using lxml library
     tree = html.fromstring(pageContent)
     title = str(tree.xpath('//header[@class="article-header"]/h1/text()'))
-    dataItem["Title"] = title
+    dataItem["Title"] = replace_all(title)
 
     subtitle = str(tree.xpath('//div[@class="subtitle"]/text()'))
-    dataItem["Subtitle"] = subtitle
+    dataItem["Subtitle"] = replace_all(subtitle)
 
     author = str(tree.xpath('//div[@class="author-timestamp"]/strong/text()'))
-    dataItem["Author"] = author
+    dataItem["Author"] = replace_all(author)
 
     time = str(tree.xpath('//div[@class="author-timestamp"]/text()[2]'))
-    dataItem["Time"] = time
+    dataItem["PublishedTime"] = replace_all(time)
 
     lead = str(tree.xpath('//p[@class="lead"]/text()'))
-    dataItem["Lead"] = lead
+    dataItem["Lead"] = replace_all(lead)
 
     content = str(tree.xpath(' .//article[@class="article"]/p//text()'))
-    dataItem["Content"] = content
+    dataItem["Content"] = replace_all(content)
 
     print("Output object:\n%s" % json.dumps(dataItem, indent=4, ensure_ascii=False))
 
 #OVERSTOCK WEBSITE
-def overstock(file):
-    pageContent = open(file, 'r').read()
+def overstock(pageContent):
     #print("Page content:\n'%s'." % pageContent)
 
     # Form an XML tree using lxml library
@@ -51,9 +49,7 @@ def overstock(file):
 
     title = str(tree.xpath('.//table[@cellpadding="2"]/tbody/tr/td[2]/a/b/text()'))
     extracted = []
-
     regex = r"'(.*?)'|\"(.*?)\""
-
 
     matches = re.finditer(regex, title)
 
@@ -66,7 +62,11 @@ def overstock(file):
             "Saving": "",
             "SavingPercent": ""
         }
-        dataItem["Title"] = tit.group(1)
+        if(tit.group(1) is None):
+            dataItem["Title"] = replace_all(tit.group(2))
+        else:
+            dataItem["Title"] = replace_all(tit.group(1))
+
         extracted.append(dataItem)
 
     listPrice = str(tree.xpath('.//table[@cellpadding="2"]/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr[1]/td[2]/s/text()'))
@@ -75,7 +75,7 @@ def overstock(file):
     regex = r"'(\$.*?)'"
     matches = re.finditer(regex, listPrice)
     for tit in matches:
-        extracted[i]["ListPrice"] = tit.group(1)
+        extracted[i]["ListPrice"] = replace_all(tit.group(1))
         i = i + 1
 
     price = str(tree.xpath('.//table[@cellpadding="2"]/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/span/b/text()'))
@@ -86,7 +86,7 @@ def overstock(file):
     regex = r"'(\$.*?)'"
     matches = re.finditer(regex, price)
     for tit in matches:
-        extracted[i]["Price"] = tit.group(1)
+        extracted[i]["Price"] = replace_all(tit.group(1))
         i = i + 1
 
 
@@ -98,8 +98,8 @@ def overstock(file):
 
     i = 0
     for match in matches:
-        extracted[i]["Saving"] = match.group(1)
-        extracted[i]["SavingPercent"] = match.group(2)
+        extracted[i]["Saving"] = replace_all(match.group(1))
+        extracted[i]["SavingPercent"] = replace_all(match.group(2))
         i += 1
 
     content = str(tree.xpath('.//table[@cellpadding="2"]/tbody/tr/td[2]/table/tbody/tr/td[2]/span/text()'))
@@ -110,13 +110,16 @@ def overstock(file):
 
     i = 0
     for tit in matches:
-        extracted[i]["Content"] = tit.group(1)
+        if (tit.group(1) is None):
+            extracted[i]["Content"] = replace_all(tit.group(2))
+        else:
+            extracted[i]["Content"] = replace_all(tit.group(1))
+
         i = i + 1
 
-    #print("Output object:\n%s" % json.dumps(extracted, indent=4, ensure_ascii=False))
+    print("Output object:\n%s" % json.dumps(extracted, indent=4, ensure_ascii=False))
 
-def partis(file):
-    pageContent = open(file, 'r').read()
+def partis(pageContent):
     #print("Page content:\n'%s'." % pageContent)
     extracted = []
     # Form an XML tree using lxml library
@@ -162,15 +165,31 @@ def partis(file):
     print("Output object:\n%s" % json.dumps(extracted, indent=4, ensure_ascii=False))
 
 def replace_all(besedilo):
-    return besedilo.replace(']','').replace('[','').replace('"','').replace("'",'').lstrip()
+    return besedilo.replace(']','').replace('\n','').replace('\t','').replace('[','').replace('"','').replace("'",'').replace('|','').replace('\\t','').replace('\\n','').lstrip()
+
 
 overstock_file_1 = '../input/overstock.com/jewelry01.html'
 overstock_file_2 = '../input/overstock.com/jewelry02.html'
+pageContent1 = open(overstock_file_1, 'r').read()
+pageContent2 = open(overstock_file_2, 'r').read()
+
+#overstock(pageContent1)
+#overstock(pageContent2)
 
 rtvslo_file_1 = '../input/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html'
 rtvslo_file_2 = '../input/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html'
 
+pageContent1 = open(rtvslo_file_1, 'r', encoding='utf-8').read()
+pageContent2 = open(rtvslo_file_2, 'r', encoding='utf-8').read()
+
+#rtvslo(pageContent1)
+#rtvslo(pageContent2)
+
 partis_file_1 = '../input/partis.si/Partis.si.html'
 partis_file_2 = '../input/partis.si/Partis2.si.html'
 
-partis(partis_file_2)
+pageContent1 = open(partis_file_1, 'r', encoding='utf-8').read()
+pageContent2 = open(partis_file_2, 'r', encoding='utf-8').read()
+
+#partis(pageContent1)
+#partis(pageContent2)
